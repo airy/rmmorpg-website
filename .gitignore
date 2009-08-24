@@ -1,0 +1,6 @@
+RoRED.cfg
+doc/api
+doc/app
+log/*.log
+tmp/**/*
+db/*.sqlite3
