@@ -1,0 +1,70 @@
+<p>
+  <b>User:</b>
+  <%=link_to @char.user.login, @char.user if @char.user %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @char.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @char.code %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%=h @char.gender %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @char.status %>
+</p>
+
+<p>
+  <b>Zone:</b>
+  <%=h @char.zone %>
+</p>
+
+<p>
+  <b>Position:</b>
+  x:<%=h @char.position_x %> | 
+  y:<%=h @char.position_y %> | 
+  z:<%=h @char.position_z %>
+</p>
+
+<table>
+<tr><td>STAT</td><td>Base</td><td>Current</td></tr>
+<tr><td>HP</td><td><%=h @char.base_hp %></td><td><%=h @char.current_hp %></td></tr>
+<tr><td>MP</td><td><%=h @char.base_mp %></td><td><%=h @char.current_mp %></td></tr>
+<tr><td>AP</td><td><%=h @char.base_ap %></td><td><%=h @char.current_ap %></td></tr>
+</table>
+
+
+
+<b>SLOTS</b>
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Slot type</th>
+    <th>Contains</th>
+  </tr>
+
+<% @char.slots.each do |char_slot| %>
+  <tr>
+    <td><%=h char_slot.code %></td>
+    <td><%=h char_slot.slot_type %></td>
+    <td><%=link_to char_slot.contains.name, char_slot.contains  if char_slot.contains %></td>
+    <td><%= link_to 'Show', char_slot %></td>
+    <td><%= link_to 'Edit', edit_char_slot_path(char_slot) %></td>
+    <td><%= link_to 'Destroy', char_slot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
+<%= link_to 'Edit', edit_char_path(@char) %> |
+<%= link_to 'Back', chars_path %>
