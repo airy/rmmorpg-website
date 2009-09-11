@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @game_base_item.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @game_base_item.code %>
+</p>
+
+<p>
+  <b>Item Type:</b>
+  <%=h @game_base_item.item_type %>
+</p>
+
+<p>
+  <b>Capacity:</b>
+  <%=h @game_base_item.capacity %>
+</p>
+
+<p>
+  <b>Accepts:</b>
+  <%=h @game_base_item.accepts %>
+</p>
+
+<p>
+  <b>Max Stack Size:</b>
+  <%=h @game_base_item.max_stack_size %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%=h @game_base_item.range %>
+</p>
+
+<p>
+  <b>Damage Dice:</b>
+  <%=h @game_base_item.damage_dice %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_base_item_path(@game_base_item) %> |
+<%= link_to 'Back', game_base_items_path %>

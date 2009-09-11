@@ -1,0 +1,36 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :item_type %><br />
+	<%= f.select( :item_type, resource.item_types) %>
+  </p>
+  <p>
+    <%= f.label :capacity %><br />
+    <%= f.text_field :capacity %>
+  </p>
+  <p>
+    <%= f.label :accepts %><br />
+    <%= f.text_area :accepts %>
+  </p>
+  <p>
+    <%= f.label :visual_model %><br />
+    link_to_item visual_model
+  </p>
+  <p>
+    <%= f.label :created_by %><br />
+    link_to ability
+  </p>
+  <p>
+    <%= f.label :max_stack_size %><br />
+    <%= f.text_field :max_stack_size %>
+  </p>
+   <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
+ 

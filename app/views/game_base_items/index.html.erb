@@ -1,0 +1,29 @@
+<h1>Listing game_base_items</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Item Type</th>
+    <th>Capacity</th>
+    <th>Accepts</th>
+    <th>Max Stack Size</th>
+  </tr>
+
+<% @game_base_items.each do |game_base_item| %>
+  <tr>
+    <td><%= link_to game_base_item.name, game_base_item %></td>
+    <td><%=h game_base_item.code %></td>
+    <td><%=h game_base_item.item_type %></td>
+    <td><%=h game_base_item.capacity %></td>
+    <td><%=h game_base_item.accepts %></td>
+    <td><%=h game_base_item.max_stack_size %></td>
+    <td><%= link_to 'Edit', edit_game_base_item_path(game_base_item) %></td>
+    <td><%= link_to 'Destroy', game_base_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game_base_item', new_game_base_item_path %>
