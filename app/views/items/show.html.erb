@@ -1,0 +1,37 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b>Base item:</b>
+  <%=link_to @item.base_item.name, @item.base_item if @item.base_item %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @item.code %>
+</p>
+
+<p>
+  <b>Container:</b>
+  <%=link_to @item.container.name,  @item.container%>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%=h @item.created_by %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @item.stack_size %>
+</p>
+
+<p>
+  <b>Bound to:</b>
+  <%=h @item.bound_to if @item.bound_to  %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

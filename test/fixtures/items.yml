@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  container: 
+  base_item: 
+  code: MyString
+  created_by: 
+  visual_model: 
+
+two:
+  container: 
+  base_item: 
+  code: MyString
+  created_by: 
+  visual_model: 

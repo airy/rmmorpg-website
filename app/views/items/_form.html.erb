@@ -1,0 +1,28 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :container %><br />
+    <%= resource.container.name %>
+  </p>
+  <p>
+    <%= f.label :base_item %><br />
+	<%= collection_select resource, :base_item_id, GameBaseItem.find(:all), :id, :name %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= resource.code %>
+  </p>
+  <p>
+    <%= f.label :created_by %><br />
+	<%#= collection_select resource, :created_by, skills.find(:all), :id, :name %>
+    <%#= f.text_field :created_by %>
+  </p>
+  <p>
+    <%= f.label :visual_model %><br />
+    <%= collection_select resource, :visual_model_id, GameBaseItem.find(:all), :id, :name %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
