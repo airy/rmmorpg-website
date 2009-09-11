@@ -1,0 +1,2 @@
+module GameBaseSkillsHelper
+end

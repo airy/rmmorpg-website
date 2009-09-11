@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  code: MyString
+  school: MyString
+  cost: MyString
+  cooldown: 1
+  casttime: 1
+  duration: 1
+  mechanic: MyString
+  dispel_type: MyString
+
+two:
+  name: MyString
+  code: MyString
+  school: MyString
+  cost: MyString
+  cooldown: 1
+  casttime: 1
+  duration: 1
+  mechanic: MyString
+  dispel_type: MyString

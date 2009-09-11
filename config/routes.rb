@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :game_base_skills
   map.resources :items
   map.resources :char_slots
   map.resources :game_base_items

@@ -1,0 +1,36 @@
+<h1>Listing game_base_skills</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>School</th>
+    <th>Cost</th>
+    <th>Cooldown</th>
+    <th>Casttime</th>
+    <th>Duration</th>
+    <th>Mechanic</th>
+    <th>Dispel type</th>
+  </tr>
+
+<% @game_base_skills.each do |game_base_skill| %>
+  <tr>
+    <td><%= link_to game_base_skill.name, game_base_skill %></td>
+    <td><%=h game_base_skill.code %></td>
+    <td><%=h game_base_skill.school %></td>
+    <td><%=h game_base_skill.cost %></td>
+    <td><%=h game_base_skill.cooldown %></td>
+    <td><%=h game_base_skill.casttime %></td>
+    <td><%=h game_base_skill.duration %></td>
+    <td><%=h game_base_skill.mechanic %></td>
+    <td><%=h game_base_skill.dispel_type %></td>
+    <td><%= link_to 'Show', game_base_skill %></td>
+    <td><%= link_to 'Edit', edit_game_base_skill_path(game_base_skill) %></td>
+    <td><%= link_to 'Destroy', game_base_skill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game_base_skill', new_game_base_skill_path %>

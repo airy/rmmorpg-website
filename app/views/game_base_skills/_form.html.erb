@@ -1,0 +1,39 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </p>
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </p>
+  <p>
+    <%= f.label :cooldown %><br />
+    <%= f.text_field :cooldown %>
+  </p>
+  <p>
+    <%= f.label :casttime %><br />
+    <%= f.text_field :casttime %>
+  </p>
+  <p>
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </p>
+  <p>
+    <%= f.label :mechanic %><br />
+    <%= f.text_field :mechanic %>
+  </p>
+  <p>
+    <%= f.label :dispel_type %><br />
+    <%= f.text_field :dispel_type %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
