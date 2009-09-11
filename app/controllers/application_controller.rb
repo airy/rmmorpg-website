@@ -1,6 +1,5 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-
 require 'lib/ar_code_generate.rb'
 class ApplicationController < ActionController::Base
 	helper :all # include all helpers, all the time
@@ -10,6 +9,8 @@ class ApplicationController < ActionController::Base
 	
 	# Scrub sensitive parameters from your log
 	# filter_parameter_logging :password
+	layout  'default'
+
 	
 private
 	def current_user_session
