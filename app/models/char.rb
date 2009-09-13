@@ -1,7 +1,6 @@
 class Char < ActiveRecord::Base
   belongs_to :user
   #belongs_to :parent, :class_name =>  'Char'
-  has_many :slots, :dependent => :destroy, :class_name => "CharSlot"
 
   before_create :get_code
   after_create :create_birth_rights
