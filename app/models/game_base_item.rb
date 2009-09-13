@@ -32,11 +32,11 @@ class GameBaseItem < ActiveRecord::Base
 		max_stack_size > 0
 	end
 
-	def generate_item(container, quantity=1)
+	def generate_item container, quantity=1
 		i = Item.new
-		i.base_item = self
+		i.game_base_item = self
 		i.container = container
-		i.visual_model = i.base_item
+		i.visual_model = i.game_base_item
 		i.stack_size = quantity
 		i.save
 		container.contains = i

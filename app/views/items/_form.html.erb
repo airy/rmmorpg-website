@@ -6,8 +6,8 @@
     <%= resource.container.name %>
   </p>
   <p>
-    <%= f.label :base_item %><br />
-	<%= collection_select resource, :base_item_id, GameBaseItem.find(:all), :id, :name %>
+    <%= f.label :game_base_item %><br />
+	<%= collection_select resource, :game_base_item_id, GameBaseItem.find(:all), :id, :name %>
   </p>
   <p>
     <%= f.label :code %><br />

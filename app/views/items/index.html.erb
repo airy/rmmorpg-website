@@ -12,8 +12,8 @@
 <% @items.each do |item| %>
   <tr>
     <td><%=link_to item.container.name, item.container if item.container%></td>
-    <td><%=link_to item.base_item.name, item if item.base_item %></td>
     <td><%=h item.code %></td>
+    <td><%=link_to item.game_base_item.name, item.game_base_item if item.game_base_item %></td>
     <td><%=h item.created_by %></td>
     <td><%=h item.stack_size %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>

@@ -2,7 +2,7 @@ class CreateItems < ActiveRecord::Migration
   def self.up
     create_table :items do |t|
       t.references :container, :polymorphic => true
-      t.references :base_item
+      t.references :game_base_item
 	  t.integer :item_level, :default => 0
       t.string :code
       t.references :created_by

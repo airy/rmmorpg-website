@@ -1,8 +1,8 @@
 class Item < ActiveRecord::Base
 	belongs_to :container, :polymorphic => true
-	belongs_to :base_item, :class_name => 'GameBaseItem'
+	belongs_to :game_base_item
 	belongs_to :created_by #class_name => 'AbilityLog'
-	belongs_to :visual_model, :class_name => 'GameBaseItem'
+	#belongs_to :visual_model, :class_name => 'GameBaseItem'
 	belongs_to :bound_to, :class_name => 'Char'
 	
 	def binding_checks?
@@ -16,7 +16,7 @@ class Item < ActiveRecord::Base
 	end
 	
 	def name
-		base_item.name
+		game_base_item.name
 	end
 	
 	
