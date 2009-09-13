@@ -1,0 +1,20 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :slot_type %><br />
+    <%= f.text_field :slot_type %>
+  </p>
+  <p>
+    <%= f.label :accepts %><br />
+    <%= f.text_area :accepts %>
+  </p>
+  <p>
+    <%= f.label :birth_right %><br />
+    <%= f.check_box :birth_right %>
+  </p>
+  
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Code:</b>
+  <%=h @game_base_slot.code %>
+</p>
+
+<p>
+  <b>Slot type:</b>
+  <%=h @game_base_slot.slot_type %>
+</p>
+
+<p>
+  <b>Accepts:</b>
+  <%=h @game_base_slot.accepts %>
+</p>
+
+<p>
+  <b>Birth right:</b>
+  <%=h @game_base_slot.birth_right %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_base_slot_path(@game_base_slot) %> |
+<%= link_to 'Back', game_base_slots_path %>
