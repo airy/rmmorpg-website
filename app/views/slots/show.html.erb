@@ -1,0 +1,23 @@
+<p>
+  <b>Code:</b>
+  <%=h @slot.code %>
+</p>
+
+<p>
+  <b>Char:</b>
+  <%=link_to @slot.char.name, @slot.char %>
+</p>
+
+<p>
+  <b>Contains:</b>
+  <%=h @slot.contains %>
+</p>
+
+<p>
+  <b>Game Base slot:</b>
+  <%=link_to @slot.game_base_slot.slot_type, @slot.game_base_slot %>
+</p>
+
+
+<%= link_to 'Edit', edit_slot_path(@slot) %> |
+<%= link_to 'Back', slots_path %>

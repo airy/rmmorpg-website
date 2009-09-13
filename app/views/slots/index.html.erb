@@ -1,0 +1,26 @@
+<h1>Listing slots</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Char</th>
+    <th>Contains</th>
+    <th>Base slot</th>
+  </tr>
+
+<% @slots.each do |slot| %>
+  <tr>
+    <td><%=link_to slot.code, slot %></td>
+    <td><%=link_to slot.char.name, slot.char %></td>
+    <td><%=link_to slot.contains.name, slot.contains if slot.contains %></td>
+    <td><%=h slot.game_base_slot.slot_type %></td>
+    <td><%= link_to 'Show', slot %></td>
+    <td><%= link_to 'Edit', edit_slot_path(slot) %></td>
+    <td><%= link_to 'Destroy', slot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New slot', new_slot_path %>

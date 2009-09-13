@@ -1,0 +1,23 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :char %><br />
+    <%= f.text_field :char %>
+  </p>
+  <p>
+    <%= f.label :contains %><br />
+    <%= f.text_field :contains %>
+  </p>
+  <p>
+    <%= f.label :base_slot %><br />
+    <%= f.text_field :base_slot %>
+  </p>
+  <p>
+    <%= f.submit 'Save ' %>
+  </p>
+<% end %>
