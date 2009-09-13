@@ -15,6 +15,7 @@ class CreateGameBaseItems < ActiveRecord::Migration
 	  
 	  t.integer :max_stack_size, :default => 1
 	  
+	  t.string :binding
 	  t.string :damage_dice
 	  t.string :range
 
