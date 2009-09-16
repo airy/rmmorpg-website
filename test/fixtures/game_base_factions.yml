@@ -1,0 +1,13 @@
+--- 
+game_base_factions_001: 
+  name: Clerics of Athon
+  created_at: 2009-09-16 20:28:57
+  code: 5E884AAA
+  updated_at: 2009-09-16 20:28:57
+  id: "1"
+game_base_factions_002: 
+  name: Elders of Black Magic
+  created_at: 2009-09-16 20:32:59
+  code: 71B49D09
+  updated_at: 2009-09-16 20:32:59
+  id: "2"
