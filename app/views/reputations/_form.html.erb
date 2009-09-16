@@ -1,0 +1,23 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :char %><br />
+    <%= f.text_field :char %>
+  </p>
+  <p>
+    <%= f.label :game_base_faction %><br />
+    <%= f.text_field :game_base_faction %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :points %><br />
+    <%= f.text_field :points %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

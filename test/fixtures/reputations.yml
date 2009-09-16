@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  code: MyString
+  char: 
+  game_base_faction: 
+  status: MyString
+  points: 1
+
+two:
+  code: MyString
+  char: 
+  game_base_faction: 
+  status: MyString
+  points: 1

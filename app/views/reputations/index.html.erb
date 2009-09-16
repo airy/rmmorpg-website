@@ -1,0 +1,17 @@
+<h1>Listing reputations</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Char</th>
+    <th>Game base faction</th>
+    <th>Status</th>
+    <th>Points</th>
+  </tr>
+
+<%= render :partial =>  @reputations%>
+</table>
+
+<br />
+
+<%= link_to 'New reputation', new_reputation_path %>
