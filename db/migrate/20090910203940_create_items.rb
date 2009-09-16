@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.references :container, :polymorphic => true
       t.references :game_base_item
-	  t.integer :item_level, :default => 0
+	  t.integer :item_level, :default => 1
       t.string :code
       t.references :created_by
       t.references :visual_model
