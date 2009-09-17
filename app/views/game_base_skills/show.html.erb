@@ -43,6 +43,17 @@
   <%=h @game_base_skill.dispel_type %>
 </p>
 
+<p>
+  <b>Icon:</b>
+  <%= iconify @game_base_skill.icon %>
+</p>
+
+<p>
+  <b>Reagents:</b><br>
+  <%= render :partial => resource.game_base_skill_reagents %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_game_base_skill_path(@game_base_skill) %> |
 <%= link_to 'Back', game_base_skills_path %>

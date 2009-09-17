@@ -7,7 +7,7 @@
   </p>
   <p>
     <%= f.label :school %><br />
-    <%= f.text_field :school %>
+	<%= f.select( :school, resource.skill_schools) %>
   </p>
   <p>
     <%= f.label :cost %><br />
@@ -32,6 +32,10 @@
   <p>
     <%= f.label :dispel_type %><br />
     <%= f.text_field :dispel_type %>
+  </p>
+  <p>
+    <%= f.label :icon %><br />
+    <%= f.text_field :icon %>
   </p>
   <p>
     <%= f.submit 'Save' %>
