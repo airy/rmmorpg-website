@@ -5,6 +5,21 @@ class GameBaseSkill < ActiveRecord::Base
 
   before_create :get_code
 
+	def skill_schools
+		[
+			'Tailoring',  
+			'Jewelcrafting',  
+			'Enchanting',
+			'Blacksmithing',
+			'Summoning',
+			'Shadow',
+			'Fire',
+			'Holy',
+			'Frost',
+			'Melee',
+			'Ranged'
+		]
+	end
 private
 	def get_code
 		self.code = generate_code
