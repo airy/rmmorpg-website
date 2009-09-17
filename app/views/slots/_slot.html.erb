@@ -1,0 +1,10 @@
+  <tr>
+    <td><%= iconify slot.current_icon %></td>
+    <td><%=link_to slot.char.name, slot.char %></td>
+    <td><%=link_to slot.name, slot %></td>
+    <td><%=link_to slot.code, slot %></td>
+    <td><%=link_to slot.item.name, slot.item if slot.item %></td>
+    <td><%= link_to 'Edit', edit_slot_path(slot) %></td>
+    <td><%= link_to 'Destroy', slot, :confirm => 'Are you sure?', :method => :delete %></td>
+	
+  </tr>
