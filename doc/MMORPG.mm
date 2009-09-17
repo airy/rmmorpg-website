@@ -98,7 +98,7 @@
 <node TEXT="terzi, silah ustas&#x131; vs gibi meslekler, ekipman stat.lar&#x131;n&#x131; g&#xf6;r&#xfc;n&#xfc;mlerini de&#x11f;i&#x15f;tirecek."/>
 <node TEXT="gathering profiencies"/>
 </node>
-<node TEXT="ITEMS" POSITION="right">
+<node TEXT="ITEMS" FOLDED="true" POSITION="right">
 <node TEXT="limited items"/>
 <node TEXT="stackables">
 <node TEXT="foods &amp; drinks">
@@ -190,12 +190,24 @@
 </node>
 </node>
 </node>
-<node TEXT="ZONES" FOLDED="true" POSITION="left">
+<node TEXT="ZONES" POSITION="left">
 <node TEXT="GUILD ZONE">
+<node TEXT="guilds can create bosses in their dungeon">
+<node TEXT="boss crafting needs amount of some boss essences">
+<node TEXT="essences can be looted from the bosses that the guild killed before"/>
+<node TEXT="boss crafting needs some amount of different resources"/>
+<node TEXT="different essences gives different abilities to the boss"/>
+<node TEXT="boss crafting needs different types of land essences depends on boss&apos; type"/>
+</node>
+</node>
 <node TEXT="Guilds will create their own zones">
 <node TEXT="guild treasure will be kept in guild&apos;s dungeoun. this instance will have bosses which can be created with essences from bosses that guild slay before">
 <node TEXT="bu yarat&#x131;klar kesildi&#x11f;inde d&#xfc;&#x15f;en lootable (kafa/DNA vs) ile baz&#x131; di&#x11f;er materyaller ile bu yarat&#x131;klar&#x131;n kopyas&#x131; olu&#x15f;turulur. daha zor bir i&#x15f;lem ile farkl&#x131; yarat&#x131;k DNA&apos;lar&#x131; birle&#x15f;tirilerek, yarat&#x131;klara yeni yetenekler eklenebilir."/>
 <node TEXT="guildin hazinesi ya&#x11f;maland&#x131;&#x11f;&#x131;nda, hazinenin sadece bir k&#x131;sm&#x131; al&#x131;nabilir (% yada adet ile s&#x131;n&#x131;rl&#x131;). baz&#x131; t&#xfc;r nesneler ise ya&#x11f;malanamaz."/>
+</node>
+<node TEXT="other guilds may raid guild&apos;s dungeon">
+<node TEXT="bosses in this dungeon sometimes drop some of guild&apos;s treasures instead of it&apos;s regular drops"/>
+<node TEXT="land essences drop from guild dungeons"/>
 </node>
 </node>
 </node>
@@ -224,22 +236,7 @@
 </node>
 </node>
 <node TEXT="GUILDS" POSITION="right">
-<node TEXT="guilds will have their own lands (instances)">
-<node TEXT="guilds can design their own dungeon">
-<node TEXT="other guilds may raid guild&apos;s dungeon">
-<node TEXT="bosses in this dungeon sometimes drop some of guild&apos;s treasures instead of it&apos;s regular drops"/>
-<node TEXT="land essences drop from guild dungeons"/>
-</node>
-<node TEXT="guilds can create bosses in their dungeon">
-<node TEXT="boss crafting needs amount of some boss essences">
-<node TEXT="essences can be looted from the bosses that the guild killed before"/>
-<node TEXT="boss crafting needs some amount of different resources"/>
-<node TEXT="different essences gives different abilities to the boss"/>
-<node TEXT="boss crafting needs different types of land essences depends on boss&apos; type"/>
-</node>
-</node>
-</node>
-</node>
+<node TEXT="guilds will have their own lands (instances) aka GUILD ZONE"/>
 <node TEXT="guild can buy shops in friendly capital cities"/>
 </node>
 <node TEXT="LANGUAGES" POSITION="right">
@@ -247,7 +244,7 @@
 <node TEXT="these languages can be learn as quest rewards"/>
 </node>
 </node>
-<node TEXT="BOSSES" POSITION="left">
+<node TEXT="BOSSES" FOLDED="true" POSITION="left">
 <node TEXT="Abilities">
 <node TEXT="wild magic zone: mana hp ve ap yerde&#x11f;i&#x15f;tirir: 100hp 50 mana 70 ap, 50hp 100 mana 70 ap olur. karakterin equiped stonelar&#x131;na ve pool boyutlar&#x131;na g&#xf6;re ayarlan&#x131;r"/>
 </node>
