@@ -3,9 +3,13 @@ class CreateGameBaseItems < ActiveRecord::Migration
     create_table :game_base_items do |t|
       t.string :name
       t.string :code
+      t.string :slot_type
       t.string :item_type
+      t.string :item_sub_type
 
-      t.string :binding
+	  t.references :game_base_skill # if the item provides a skill
+	  
+      t.string :binding_type
 	  
 	  #container type objects
 	  t.integer :capacity, :deault => 0
@@ -16,7 +20,7 @@ class CreateGameBaseItems < ActiveRecord::Migration
 	  t.integer :max_stack_size, :default => 1
 	  
 	  t.string :binding
-	  t.string :damage_dice
+	  t.integer :damage_bonus
 	  t.string :range
 
       t.timestamps
