@@ -1,4 +1,8 @@
 class GameBaseItem < ActiveRecord::Base
+	has_many :items
+	#has_many :game_base_skill_reagents
+	
+	belongs_to :game_base_skill
 
 	def slot_types
 		[
