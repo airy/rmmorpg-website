@@ -1,11 +1,8 @@
-<p>
-  <b>Code:</b>
-  <%=h @item.code %>
-</p>
-
-
-<p>
-  <b>Name:</b>
-  <%=link_to @item.game_base_item.name, @item.game_base_item %>
-</p>
-
+<tr>
+     <td><%= iconify item.icon %></td>
+   <td><%=link_to item.container.char.name, item.container.char %></td>
+    <td><%=link_to item.container.name, item.container %></td>
+    <td><%=h item.item_level %></td>
+    <td><%=link_to item.code, item %></td>
+    <td><%=link_to item.name, item  %></td>
+</tr>

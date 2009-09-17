@@ -2,19 +2,21 @@
 
 <table>
   <tr>
-    <th>Container</th>
-    <th>Base item</th>
+    <th>Icon</th>
+    <th>Owner</th>
+    <th>Name</th>
     <th>Code</th>
-    <th>Created by</th>
+    <th>Item Level</th>
     <th>Stack Size</th>
   </tr>
 
 <% @items.each do |item| %>
   <tr>
-    <td><%=link_to item.container.name, item.container if item.container%></td>
-    <td><%=h item.code %></td>
-    <td><%=link_to item.game_base_item.name, item.game_base_item if item.game_base_item %></td>
-    <td><%=h item.created_by %></td>
+    <td><%= iconify item.icon %></td>
+    <td><%=link_to item.container.char.name, item.container.char %></td>
+    <td><%=link_to item.name, item %></td>
+    <td><%=link_to item.code, item %></td>
+    <td><%=h item.item_level %></td>
     <td><%=h item.stack_size %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>

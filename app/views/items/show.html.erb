@@ -1,37 +1,106 @@
+
+
 <p>
   <b>Name:</b>
-  <%=h @item.name %>
+  <%=h resource.code %>
+</p>
+
+
+<p>
+
+<p>
+  <b>Item Type:</b>
+  <%=h resource.item_type %>
 </p>
 
 <p>
-  <b>Game Base item:</b>
-  <%=link_to @item.name, @item.game_base_item if @item.game_base_item %>
+  <b>Item Sub Type:</b>
+  <%=h resource.item_sub_type %>
+</p>
+
+
+<p>
+  <b>Binding Type:</b>
+  <%=h resource.binding_type %>
 </p>
 
 <p>
-  <b>Code:</b>
-  <%=h @item.code %>
+  <b>Capacity:</b>
+  <%=h resource.capacity %>
 </p>
+
+<p>
+  <b>Game Base Skill (if item is skill stone):</b>
+  <%=link_to resource.game_base_skill.name, resource.game_base_skill if resource.game_base_skill %>
+</p>
+
+
+<p>
+  <b>Accepts:</b>
+  <%=h resource.accepts %>
+</p>
+
+<p>
+  <b>Max Stack Size:</b>
+  <%=h resource.max_stack_size %>
+</p>
+
+<p>
+  <b>Range:</b>
+  <%=h resource.range %>
+</p>
+
+<p>
+  <b>Damage Bonus:</b>
+  <%=h resource.damage_bonus %>
+</p>
+
+
+
+<hr>
+Item Attributes
+<hr>
+
 
 <p>
   <b>Container:</b>
-  <%=link_to @item.container.name,  @item.container%>
+  <%=link_to resource.container.code,  resource.container %>
+  (<%=h "#{resource.container.slot_type} of #{resource.container.char.name}" %>)
+  
 </p>
 
 <p>
+  <b>Item Level:</b>
+  <%=h resource.item_level%>
+</p>
+
+
+<p>
   <b>Created by:</b>
-  <%=h @item.created_by %>
+  <%=h resource.created_by %>
 </p>
 
 <p>
   <b>Quantity:</b>
-  <%=h @item.stack_size %>
+  <%=h resource.stack_size %>
 </p>
+
 
 <p>
   <b>Bound to:</b>
-  <%=h @item.bound_to if @item.bound_to  %>
+  <%=h resource.bound_to if resource.bound_to  %>
 </p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<% if resource.game_base_item.is_container? %>
+<p>
+  <b>Contains:</b>
+  <%=h resource.bound_to if resource.bound_to  %>
+</p>
+<% end %>
+
+<hr>
+
+
+
+<%= link_to 'Edit', edit_item_path(resource) %> |
+<%= link_to 'Back', resources %>

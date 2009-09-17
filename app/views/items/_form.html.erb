@@ -3,11 +3,11 @@
 
   <p>
     <%= f.label :container %><br />
-    <%= resource.container.name %>
+    <%= resource.container.code %>
   </p>
   <p>
     <%= f.label :game_base_item %><br />
-	<%= collection_select resource, :game_base_item_id, GameBaseItem.find(:all), :id, :name %>
+	<%= lookup(f, :game_base_item_id, GameBaseItem ) %>
   </p>
   <p>
     <%= f.label :code %><br />
@@ -20,7 +20,7 @@
   </p>
   <p>
     <%= f.label :visual_model %><br />
-    <%= collection_select resource, :visual_model_id, GameBaseItem.find(:all), :id, :name %>
+	<%= lookup(f, :visual_model_id, GameBaseItem ) %>
   </p>
   <p>
     <%= f.submit 'Save' %>
