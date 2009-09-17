@@ -1,13 +1,379 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  code: MyString
-  slot_type: MyString
-  accepts: MyText
-  birth_right: false
-
-two:
-  code: MyString
-  slot_type: MyString
-  accepts: MyText
-  birth_right: false
+--- 
+game_base_slots_037: 
+  created_at: 2009-09-15 01:01:07
+  code: 64B24A00
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:07
+  id: "37"
+  slot_type: ABILITY_SLOT_5
+  icon: 
+  birth_right: t
+game_base_slots_026: 
+  created_at: 2009-09-15 01:01:06
+  code: 3BD748A1
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "26"
+  slot_type: BANK_BAG_SLOT_2
+  icon: 
+  birth_right: 
+game_base_slots_015: 
+  created_at: 2009-09-15 01:01:05
+  code: "73028319"
+  accepts: MAINHAND_SLOT_ITEM
+  updated_at: 2009-09-15 21:27:15
+  id: "15"
+  slot_type: MAINHAND_SLOT
+  icon: emptyequip/mainhand.gif
+  birth_right: t
+game_base_slots_004: 
+  created_at: 2009-09-15 01:01:03
+  code: 117639AD
+  accepts: BACK_SLOT_ITEM
+  updated_at: 2009-09-15 21:22:56
+  id: "4"
+  slot_type: BACK_SLOT
+  icon: emptyequip/back.gif
+  birth_right: t
+game_base_slots_038: 
+  created_at: 2009-09-15 01:01:08
+  code: D085D20F
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:08
+  id: "38"
+  slot_type: ABILITY_SLOT_6
+  icon: 
+  birth_right: t
+game_base_slots_027: 
+  created_at: 2009-09-15 01:01:06
+  code: 7A765C04
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "27"
+  slot_type: BANK_BAG_SLOT_3
+  icon: 
+  birth_right: 
+game_base_slots_016: 
+  created_at: 2009-09-15 01:01:05
+  code: A52720BB
+  accepts: OFFHAND_SLOT_ITEM
+  updated_at: 2009-09-15 21:28:00
+  id: "16"
+  slot_type: OFFHAND_SLOT
+  icon: emptyequip/secondaryhand.gif
+  birth_right: t
+game_base_slots_005: 
+  created_at: 2009-09-15 01:01:03
+  code: 20CE4C9D
+  accepts: CHEST_SLOT_ITEM
+  updated_at: 2009-09-15 21:23:23
+  id: "5"
+  slot_type: CHEST_SLOT
+  icon: emptyequip/chest.gif
+  birth_right: t
+game_base_slots_039: 
+  created_at: 2009-09-15 01:01:08
+  code: 38DF0F4A
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:08
+  id: "39"
+  slot_type: ABILITY_SLOT_7
+  icon: 
+  birth_right: t
+game_base_slots_028: 
+  created_at: 2009-09-15 01:01:06
+  code: 8C1D7901
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "28"
+  slot_type: BANK_BAG_SLOT_4
+  icon: 
+  birth_right: 
+game_base_slots_017: 
+  created_at: 2009-09-15 01:01:05
+  code: A87F33C3
+  accepts: RANGED_SLOT_ITEM
+  updated_at: 2009-09-15 21:28:14
+  id: "17"
+  slot_type: RANGED_SLOT
+  icon: emptyequip/ranged.gif
+  birth_right: t
+game_base_slots_006: 
+  created_at: 2009-09-15 01:01:03
+  code: C81A6A63
+  accepts: WIRST_SLOT_ITEM
+  updated_at: 2009-09-15 21:24:01
+  id: "6"
+  slot_type: WRIST_SLOT
+  icon: emptyequip/wrist.gif
+  birth_right: t
+game_base_slots_040: 
+  created_at: 2009-09-15 01:01:08
+  code: 53CD8D41
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:08
+  id: "40"
+  slot_type: ABILITY_SLOT_8
+  icon: 
+  birth_right: t
+game_base_slots_029: 
+  created_at: 2009-09-15 01:01:06
+  code: C9B31EF9
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "29"
+  slot_type: BANK_BAG_SLOT_5
+  icon: 
+  birth_right: 
+game_base_slots_018: 
+  created_at: 2009-09-15 01:01:05
+  code: 689B7CE2
+  accepts: AMNO_SLOT_ITEM
+  updated_at: 2009-09-15 01:01:05
+  id: "18"
+  slot_type: AMNO_SLOT
+  icon: 
+  birth_right: t
+game_base_slots_007: 
+  created_at: 2009-09-15 01:01:03
+  code: E0D89722
+  accepts: HANDS_SLOT_ITEM
+  updated_at: 2009-09-15 21:24:23
+  id: "7"
+  slot_type: HANDS_SLOT
+  icon: emptyequip/hands.gif
+  birth_right: t
+game_base_slots_041: 
+  created_at: 2009-09-15 01:01:08
+  code: D692F2B2
+  accepts: PROFIENCY
+  updated_at: 2009-09-15 01:01:08
+  id: "41"
+  slot_type: PROFIENCY_SLOT_1
+  icon: 
+  birth_right: t
+game_base_slots_030: 
+  created_at: 2009-09-15 01:01:07
+  code: 3D0E89E7
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:07
+  id: "30"
+  slot_type: BANK_BAG_SLOT_6
+  icon: 
+  birth_right: 
+game_base_slots_019: 
+  created_at: 2009-09-15 01:01:05
+  code: C27D72BC
+  accepts: INVENTORY_SLOT_ITEM
+  updated_at: 2009-09-15 01:01:05
+  id: "19"
+  slot_type: INVENTORY_SLOT
+  icon: 
+  birth_right: t
+game_base_slots_008: 
+  created_at: 2009-09-15 01:01:04
+  code: 54B21D63
+  accepts: WAIST_SLOT_ITEM
+  updated_at: 2009-09-15 21:24:39
+  id: "8"
+  slot_type: WAIST_SLOT
+  icon: emptyequip/waist.gif
+  birth_right: t
+game_base_slots_042: 
+  created_at: 2009-09-15 01:01:08
+  code: 6DCBC5AC
+  accepts: PROFIENCY
+  updated_at: 2009-09-15 01:01:08
+  id: "42"
+  slot_type: PROFIENCY_SLOT_2
+  icon: 
+  birth_right: t
+game_base_slots_031: 
+  created_at: 2009-09-15 01:01:07
+  code: B1E8AD6C
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:07
+  id: "31"
+  slot_type: BANK_BAG_SLOT_7
+  icon: 
+  birth_right: 
+game_base_slots_020: 
+  created_at: 2009-09-15 01:01:05
+  code: "45519623"
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:05
+  id: "20"
+  slot_type: BAG_SLOT_1
+  icon: 
+  birth_right: t
+game_base_slots_009: 
+  created_at: 2009-09-15 01:01:04
+  code: 4A550893
+  accepts: LEGS_SLOT_ITEM
+  updated_at: 2009-09-15 21:25:17
+  id: "9"
+  slot_type: LEGS_SLOT
+  icon: emptyequip/legs.gif
+  birth_right: t
+game_base_slots_032: 
+  created_at: 2009-09-15 01:01:07
+  code: 06807715
+  accepts: KEY_RING
+  updated_at: 2009-09-15 01:01:07
+  id: "32"
+  slot_type: KEY_RING_SLOT
+  icon: 
+  birth_right: t
+game_base_slots_021: 
+  created_at: 2009-09-15 01:01:05
+  code: 03FEFA72
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:05
+  id: "21"
+  slot_type: BAG_SLOT_2
+  icon: 
+  birth_right: t
+game_base_slots_010: 
+  created_at: 2009-09-15 01:01:04
+  code: 1F14E72A
+  accepts: FEET_SLOT_ITEM
+  updated_at: 2009-09-15 21:25:41
+  id: "10"
+  slot_type: FEET_SLOT
+  icon: emptyequip/feet.gif
+  birth_right: t
+game_base_slots_033: 
+  created_at: 2009-09-15 01:01:07
+  code: B03D4401
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:07
+  id: "33"
+  slot_type: ABILITY_SLOT_1
+  icon: 
+  birth_right: t
+game_base_slots_022: 
+  created_at: 2009-09-15 01:01:05
+  code: 3BFD6403
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:05
+  id: "22"
+  slot_type: BAG_SLOT_3
+  icon: 
+  birth_right: t
+game_base_slots_011: 
+  created_at: 2009-09-15 01:01:04
+  code: F069675B
+  accepts: RING_SLOT_ITEM
+  updated_at: 2009-09-15 21:26:00
+  id: "11"
+  slot_type: RING_SLOT_1
+  icon: emptyequip/finger.gif
+  birth_right: t
+game_base_slots_034: 
+  created_at: 2009-09-15 01:01:07
+  code: 519CE918
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:07
+  id: "34"
+  slot_type: ABILITY_SLOT_2
+  icon: 
+  birth_right: t
+game_base_slots_023: 
+  created_at: 2009-09-15 01:01:06
+  code: DC723AC1
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "23"
+  slot_type: BAG_SLOT_4
+  icon: 
+  birth_right: t
+game_base_slots_012: 
+  created_at: 2009-09-15 01:01:04
+  code: 64441C45
+  accepts: RING_SLOT_ITEM
+  updated_at: 2009-09-15 21:26:24
+  id: "12"
+  slot_type: RING_SLOT_2
+  icon: emptyequip/finger.gif
+  birth_right: t
+game_base_slots_001: 
+  created_at: 2009-09-15 01:01:03
+  code: 373C2F50
+  accepts: HEAD_SLOT_ITEM
+  updated_at: 2009-09-15 21:20:36
+  id: "1"
+  slot_type: HEAD_SLOT
+  icon: emptyequip/head.gif
+  birth_right: t
+game_base_slots_035: 
+  created_at: 2009-09-15 01:01:07
+  code: 4377EB82
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:07
+  id: "35"
+  slot_type: ABILITY_SLOT_3
+  icon: 
+  birth_right: t
+game_base_slots_024: 
+  created_at: 2009-09-15 01:01:06
+  code: 9DB1F279
+  accepts: BANK_SLOT_ITEM
+  updated_at: 2009-09-15 01:01:06
+  id: "24"
+  slot_type: BANK_SLOT
+  icon: 
+  birth_right: t
+game_base_slots_013: 
+  created_at: 2009-09-15 01:01:04
+  code: AA124E0B
+  accepts: TRINKET_SLOT_ITEM
+  updated_at: 2009-09-15 21:26:48
+  id: "13"
+  slot_type: TRINKET_SLOT_1
+  icon: emptyequip/ear.gif
+  birth_right: t
+game_base_slots_002: 
+  created_at: 2009-09-15 01:01:03
+  code: A88D21C9
+  accepts: NECK_SLOT_ITEM
+  updated_at: 2009-09-15 21:22:14
+  id: "2"
+  slot_type: NECK_SLOT
+  icon: emptyequip/neck.gif
+  birth_right: t
+game_base_slots_036: 
+  created_at: 2009-09-15 01:01:07
+  code: 3C03E1A4
+  accepts: ABILITY_STONE
+  updated_at: 2009-09-15 01:01:07
+  id: "36"
+  slot_type: ABILITY_SLOT_4
+  icon: 
+  birth_right: t
+game_base_slots_025: 
+  created_at: 2009-09-15 01:01:06
+  code: E1DF3D8F
+  accepts: CONTAINER_BAG
+  updated_at: 2009-09-15 01:01:06
+  id: "25"
+  slot_type: BANK_BAG_SLOT_1
+  icon: 
+  birth_right: 
+game_base_slots_014: 
+  created_at: 2009-09-15 01:01:04
+  code: 8963F423
+  accepts: TRINKET_SLOT_ITEM
+  updated_at: 2009-09-15 21:26:59
+  id: "14"
+  slot_type: TRINKET_SLOT_2
+  icon: emptyequip/ear.gif
+  birth_right: t
+game_base_slots_003: 
+  created_at: 2009-09-15 01:01:03
+  code: 7702BCBF
+  accepts: SHOULDERS_SLOT_ITEM
+  updated_at: 2009-09-15 21:22:32
+  id: "3"
+  slot_type: SHOULDERS_SLOT
+  icon: emptyequip/shoulder.gif
+  birth_right: t

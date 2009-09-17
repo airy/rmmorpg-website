@@ -1,11 +1,457 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  code: MyString
-  type: MyString
-
-two:
-  name: MyString
-  code: MyString
-  type: MyString
+--- 
+game_base_items_017: 
+  name: Linen Cloth
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: 42D2A644
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "17"
+  slot_type: CLOTH
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_006: 
+  name: Linen Shirt
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: 6E6B45B7
+  accepts: ""
+  updated_at: 2009-09-15 22:37:00
+  damage_bonus: 
+  id: "6"
+  slot_type: CHEST_SLOT
+  icon: icons/inv_shirt_white_01.jpg
+  item_sub_type: ""
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: ""
+game_base_items_018: 
+  name: Silk Cloth
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: B56048FB
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "18"
+  slot_type: CLOTH
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_007: 
+  name: Jean
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:17
+  code: 68CB00BF
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "7"
+  slot_type: LEGS_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: 
+game_base_items_019: 
+  name: Raw Ruby
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: CE38785E
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "19"
+  slot_type: RAW_GEM
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_008: 
+  name: Stone Bullet
+  game_base_skill_id: 
+  max_stack_size: "250"
+  created_at: 2009-09-15 01:01:17
+  code: 5736B3F9
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "8"
+  slot_type: AMNO_SLOT
+  icon: 
+  item_sub_type: SLING AMNO
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: AMNO
+game_base_items_020: 
+  name: Perfect Ruby
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:18
+  code: CFC8DAAE
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "20"
+  slot_type: GEM
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_009: 
+  name: Granite Bullet
+  game_base_skill_id: 
+  max_stack_size: "150"
+  created_at: 2009-09-15 01:01:17
+  code: C76216D9
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "9"
+  slot_type: AMNO_SLOT
+  icon: 
+  item_sub_type: SLING AMNO
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: AMNO
+game_base_items_021: 
+  name: Flawless Ruby
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:19
+  code: 8255B36B
+  accepts: 
+  updated_at: 2009-09-15 01:01:19
+  damage_bonus: 
+  id: "21"
+  slot_type: GEM
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_010: 
+  name: Cowboy Hat
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:17
+  code: E7BFB0CE
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "10"
+  slot_type: HEAD_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: 
+game_base_items_022: 
+  name: Guild Key
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:19
+  code: "17049212"
+  accepts: 
+  updated_at: 2009-09-15 01:01:19
+  damage_bonus: 
+  id: "22"
+  slot_type: KEY_RING_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Pickup
+  item_type: 
+game_base_items_011: 
+  name: Bandana
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:17
+  code: BDDDC8EC
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "11"
+  slot_type: HEAD_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: 
+game_base_items_023: 
+  name: Tailoring
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:19
+  code: 7DDD9013
+  accepts: TAILORING_RECIPE
+  updated_at: 2009-09-15 01:01:19
+  damage_bonus: 
+  id: "23"
+  slot_type: PROFIENCY_SLOT
+  icon: 
+  item_sub_type: TAILORIN_RECIPE_CONTAINER
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "1000"
+  binding_type: Bind on Pickup
+  item_type: CONTAINER
+game_base_items_012: 
+  name: Sprint Shoes
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:17
+  code: 67539ACB
+  accepts: 
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "12"
+  slot_type: FEET_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: 
+game_base_items_001: 
+  name: Inventory
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: C2F5922A
+  accepts: "*"
+  updated_at: 2009-09-15 21:44:54
+  damage_bonus: 
+  id: "1"
+  slot_type: HEAD_SLOT
+  icon: icons/inv_misc_bag_07_black.jpg
+  item_sub_type: ""
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "20"
+  binding_type: Bind on Pickup
+  item_type: ""
+game_base_items_024: 
+  name: "Tailoring Recipe: Create Linen Shirt"
+  game_base_skill_id: "1"
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:19
+  code: C373B60D
+  accepts: ""
+  updated_at: 2009-09-15 01:13:52
+  damage_bonus: 
+  id: "24"
+  slot_type: HEAD_SLOT
+  icon: 
+  item_sub_type: ""
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: Bind on Pickup
+  item_type: TAILORING_RECIPE
+game_base_items_013: 
+  name: Key Ring
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:17
+  code: E506A146
+  accepts: KEY
+  updated_at: 2009-09-15 01:01:17
+  damage_bonus: 
+  id: "13"
+  slot_type: KEY_RING_SLOT
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "1000"
+  binding_type: Bind on Pickup
+  item_type: 
+game_base_items_002: 
+  name: Short Staff
+  game_base_skill_id: "2"
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: 4A0570A4
+  accepts: ""
+  updated_at: 2009-09-15 21:08:05
+  damage_bonus: "4"
+  id: "2"
+  slot_type: MAINHAND_SLOT
+  icon: icons/inv_staff_02.jpg
+  item_sub_type: ONE HAND WEAPON
+  visual_model_id: 
+  binding: 
+  range: 1m
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: WEAPON
+game_base_items_014: 
+  name: Arcane Dust
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: 4940629D
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "14"
+  slot_type: ENCHANTING_MATERIAL
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_003: 
+  name: Staff
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: 7FE36B34
+  accepts: 
+  updated_at: 2009-09-15 01:01:16
+  damage_bonus: "6"
+  id: "3"
+  slot_type: DUALHAND_SLOT
+  icon: 
+  item_sub_type: TWO HAND WEAPON
+  visual_model_id: 
+  binding: 
+  range: 2m
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: WEAPON
+game_base_items_015: 
+  name: Void Crystal
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: 032B865A
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "15"
+  slot_type: ENCHANTING_MATERIAL
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_004: 
+  name: Pocket Knife
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: C3508D88
+  accepts: ""
+  updated_at: 2009-09-16 02:04:41
+  damage_bonus: "6"
+  id: "4"
+  slot_type: OFFHAND_SLOT
+  icon: icons/inv_weapon_shortblade_17.jpg
+  item_sub_type: OFF HAND WEAPON
+  visual_model_id: 
+  binding: 
+  range: 1m
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: WEAPON
+game_base_items_016: 
+  name: Large Prismatic Shard
+  game_base_skill_id: 
+  max_stack_size: "20"
+  created_at: 2009-09-15 01:01:18
+  code: 395861B1
+  accepts: 
+  updated_at: 2009-09-15 01:01:18
+  damage_bonus: 
+  id: "16"
+  slot_type: ENCHANTING_MATERIAL
+  icon: 
+  item_sub_type: 
+  visual_model_id: 
+  binding: 
+  range: 
+  capacity: "0"
+  binding_type: 
+  item_type: 
+game_base_items_005: 
+  name: Sling
+  game_base_skill_id: 
+  max_stack_size: "1"
+  created_at: 2009-09-15 01:01:16
+  code: 812B0488
+  accepts: 
+  updated_at: 2009-09-15 01:01:16
+  damage_bonus: "4"
+  id: "5"
+  slot_type: RANGED_SLOT
+  icon: 
+  item_sub_type: RANGED WEAPON
+  visual_model_id: 
+  binding: 
+  range: 35m
+  capacity: "0"
+  binding_type: Bind on Equip
+  item_type: WEAPON

@@ -1,7 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-# one:
-#   column: value
-#
-# two:
-#   column: value
+--- 
+users_001: 
+  single_access_token: xPj6VCx1a7BBKFjI2sHG
+  last_request_at: 2009-09-17 18:53:08
+  created_at: 2009-09-15 01:01:29
+  crypted_password: cb851be0dbe066ccf6640b67315f144d0457a36a7bd9c8c1c7c52c0175d15c14cdce3e30d7f7a3471d181085734942c71eb6d10f4a3445126a9dc7af5c0a171c
+  perishable_token: xcfqiUQXT7k4LAaFTPwv
+  updated_at: 2009-09-17 18:53:08
+  id: "1"
+  failed_login_count: "0"
+  current_login_ip: 127.0.0.1
+  password_salt: GZI061CkBAZ8nZtmgwRO
+  current_login_at: 2009-09-15 01:13:32
+  persistence_token: 34c5821027ea27764af368a3797ef627c9da314f7798dd02c07ec9a41fd34c93e865a8474cf622804dea88deeb6186e101425f6874ff0b6a1c299316f7555f87
+  login_count: "1"
+  last_login_ip: 
+  login: airy
+  last_login_at: 
+  email: airydragon@gmail.com

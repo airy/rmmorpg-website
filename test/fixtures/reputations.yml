@@ -1,15 +1,10 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  code: MyString
-  char: 
-  game_base_faction: 
-  status: MyString
-  points: 1
-
-two:
-  code: MyString
-  char: 
-  game_base_faction: 
-  status: MyString
-  points: 1
+--- 
+reputations_001: 
+  created_at: 2009-09-17 01:03:34
+  code: 
+  updated_at: 2009-09-17 01:03:34
+  id: "1"
+  points: "1"
+  char_id: "1"
+  game_base_faction_id: "1"
+  status: ""

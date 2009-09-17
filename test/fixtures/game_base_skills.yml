@@ -1,23 +1,29 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  code: MyString
-  school: MyString
-  cost: MyString
-  cooldown: 1
-  casttime: 1
-  duration: 1
-  mechanic: MyString
-  dispel_type: MyString
-
-two:
-  name: MyString
-  code: MyString
-  school: MyString
-  cost: MyString
-  cooldown: 1
-  casttime: 1
-  duration: 1
-  mechanic: MyString
-  dispel_type: MyString
+--- 
+game_base_skills_001: 
+  name: Create Linen Shirt
+  school: Tailoring
+  duration: 
+  casttime: 
+  created_at: 2009-09-15 01:03:04
+  code: 2548370C
+  cost: ""
+  cooldown: 
+  updated_at: 2009-09-15 22:36:14
+  id: "1"
+  icon: icons/inv_shirt_white_01.jpg
+  dispel_type: ""
+  mechanic: ""
+game_base_skills_002: 
+  name: Attack with Short Staff
+  school: Melee
+  duration: 
+  casttime: 
+  created_at: 2009-09-15 01:31:56
+  code: 1756B470
+  cost: ""
+  cooldown: 
+  updated_at: 2009-09-15 22:27:14
+  id: "2"
+  icon: icons/inv_staff_02.jpg
+  dispel_type: ""
+  mechanic: ""

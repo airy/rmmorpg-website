@@ -1,15 +1,131 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  container: 
-  base_item: 
-  code: MyString
-  created_by: 
-  visual_model: 
-
-two:
-  container: 
-  base_item: 
-  code: MyString
-  created_by: 
-  visual_model: 
+--- 
+items_003: 
+  created_at: 2009-09-15 01:01:34
+  code: 64B0E083
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "3"
+  container_id: "9"
+  container_type: Slot
+  game_base_item_id: "7"
+  visual_model_id: "7"
+  stack_size: "1"
+  bound_to_id: 
+items_004: 
+  created_at: 2009-09-15 01:01:34
+  code: 1954784D
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "4"
+  container_id: "10"
+  container_type: Slot
+  game_base_item_id: "12"
+  visual_model_id: "12"
+  stack_size: "1"
+  bound_to_id: 
+items_005: 
+  created_at: 2009-09-15 01:01:34
+  code: 4442D12A
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "5"
+  container_id: "17"
+  container_type: Slot
+  game_base_item_id: "5"
+  visual_model_id: "5"
+  stack_size: "1"
+  bound_to_id: 
+items_006: 
+  created_at: 2009-09-15 01:01:34
+  code: "75331350"
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "6"
+  container_id: "19"
+  container_type: Slot
+  game_base_item_id: "1"
+  visual_model_id: "1"
+  stack_size: "1"
+  bound_to_id: 
+items_007: 
+  created_at: 2009-09-15 01:01:34
+  code: E28EE535
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "7"
+  container_id: "15"
+  container_type: Slot
+  game_base_item_id: "2"
+  visual_model_id: "2"
+  stack_size: "1"
+  bound_to_id: 
+items_008: 
+  created_at: 2009-09-15 01:01:34
+  code: 1C7526CD
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "8"
+  container_id: "16"
+  container_type: Slot
+  game_base_item_id: "4"
+  visual_model_id: "4"
+  stack_size: "1"
+  bound_to_id: 
+items_009: 
+  created_at: 2009-09-15 01:01:34
+  code: EE455334
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "9"
+  container_id: "18"
+  container_type: Slot
+  game_base_item_id: "8"
+  visual_model_id: "8"
+  stack_size: "100"
+  bound_to_id: 
+items_010: 
+  created_at: 2009-09-15 01:01:34
+  code: 19E5842C
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "10"
+  container_id: "25"
+  container_type: Slot
+  game_base_item_id: "13"
+  visual_model_id: "13"
+  stack_size: "1"
+  bound_to_id: 
+items_001: 
+  created_at: 2009-09-15 01:01:34
+  code: 549155E7
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "1"
+  container_id: "1"
+  container_type: Slot
+  game_base_item_id: "11"
+  visual_model_id: "11"
+  stack_size: "1"
+  bound_to_id: 
+items_002: 
+  created_at: 2009-09-15 01:01:34
+  code: BBAEEA45
+  created_by_id: 
+  updated_at: 2009-09-15 01:01:34
+  item_level: "1"
+  id: "2"
+  container_id: "5"
+  container_type: Slot
+  game_base_item_id: "6"
+  visual_model_id: "6"
+  stack_size: "1"
+  bound_to_id: 

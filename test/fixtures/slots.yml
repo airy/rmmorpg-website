@@ -1,13 +1,246 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  code: MyString
-  char: 
-  contains: 
-  base_slot: 
-
-two:
-  code: MyString
-  char: 
-  contains: 
-  base_slot: 
+--- 
+slots_025: 
+  created_at: 2009-09-15 01:01:34
+  code: D2BDF602
+  updated_at: 2009-09-15 01:01:34
+  id: "25"
+  char_id: "1"
+  game_base_slot_id: "32"
+slots_014: 
+  created_at: 2009-09-15 01:01:33
+  code: 46E2CA40
+  updated_at: 2009-09-15 01:01:33
+  id: "14"
+  char_id: "1"
+  game_base_slot_id: "14"
+slots_003: 
+  created_at: 2009-09-15 01:01:33
+  code: 9B5492FB
+  updated_at: 2009-09-15 01:01:33
+  id: "3"
+  char_id: "1"
+  game_base_slot_id: "3"
+slots_026: 
+  created_at: 2009-09-15 01:01:34
+  code: 97DE0AF2
+  updated_at: 2009-09-15 01:01:34
+  id: "26"
+  char_id: "1"
+  game_base_slot_id: "33"
+slots_015: 
+  created_at: 2009-09-15 01:01:33
+  code: A7FBCE36
+  updated_at: 2009-09-15 01:01:34
+  id: "15"
+  char_id: "1"
+  game_base_slot_id: "15"
+slots_004: 
+  created_at: 2009-09-15 01:01:33
+  code: 79106EC2
+  updated_at: 2009-09-15 01:01:33
+  id: "4"
+  char_id: "1"
+  game_base_slot_id: "4"
+slots_027: 
+  created_at: 2009-09-15 01:01:34
+  code: 909DAFE3
+  updated_at: 2009-09-15 01:01:34
+  id: "27"
+  char_id: "1"
+  game_base_slot_id: "34"
+slots_016: 
+  created_at: 2009-09-15 01:01:33
+  code: E87087E3
+  updated_at: 2009-09-15 01:01:34
+  id: "16"
+  char_id: "1"
+  game_base_slot_id: "16"
+slots_005: 
+  created_at: 2009-09-15 01:01:33
+  code: CE1994F6
+  updated_at: 2009-09-15 01:01:34
+  id: "5"
+  char_id: "1"
+  game_base_slot_id: "5"
+slots_028: 
+  created_at: 2009-09-15 01:01:34
+  code: 28BB9704
+  updated_at: 2009-09-15 01:01:34
+  id: "28"
+  char_id: "1"
+  game_base_slot_id: "35"
+slots_017: 
+  created_at: 2009-09-15 01:01:33
+  code: 77D421C3
+  updated_at: 2009-09-15 01:01:34
+  id: "17"
+  char_id: "1"
+  game_base_slot_id: "17"
+slots_006: 
+  created_at: 2009-09-15 01:01:33
+  code: B97173A3
+  updated_at: 2009-09-15 01:01:33
+  id: "6"
+  char_id: "1"
+  game_base_slot_id: "6"
+slots_029: 
+  created_at: 2009-09-15 01:01:34
+  code: 0A839703
+  updated_at: 2009-09-15 01:01:34
+  id: "29"
+  char_id: "1"
+  game_base_slot_id: "36"
+slots_018: 
+  created_at: 2009-09-15 01:01:33
+  code: 8BBDF947
+  updated_at: 2009-09-15 01:01:34
+  id: "18"
+  char_id: "1"
+  game_base_slot_id: "18"
+slots_007: 
+  created_at: 2009-09-15 01:01:33
+  code: B4F4FF35
+  updated_at: 2009-09-15 01:01:33
+  id: "7"
+  char_id: "1"
+  game_base_slot_id: "7"
+slots_030: 
+  created_at: 2009-09-15 01:01:34
+  code: 5B698C78
+  updated_at: 2009-09-15 01:01:34
+  id: "30"
+  char_id: "1"
+  game_base_slot_id: "37"
+slots_019: 
+  created_at: 2009-09-15 01:01:34
+  code: B0AE2A9D
+  updated_at: 2009-09-15 01:01:34
+  id: "19"
+  char_id: "1"
+  game_base_slot_id: "19"
+slots_008: 
+  created_at: 2009-09-15 01:01:33
+  code: 5F5F118F
+  updated_at: 2009-09-15 01:01:33
+  id: "8"
+  char_id: "1"
+  game_base_slot_id: "8"
+slots_031: 
+  created_at: 2009-09-15 01:01:34
+  code: 374690E9
+  updated_at: 2009-09-15 01:01:34
+  id: "31"
+  char_id: "1"
+  game_base_slot_id: "38"
+slots_020: 
+  created_at: 2009-09-15 01:01:34
+  code: 6179757A
+  updated_at: 2009-09-15 01:01:34
+  id: "20"
+  char_id: "1"
+  game_base_slot_id: "20"
+slots_009: 
+  created_at: 2009-09-15 01:01:33
+  code: 87A52BB2
+  updated_at: 2009-09-15 01:01:34
+  id: "9"
+  char_id: "1"
+  game_base_slot_id: "9"
+slots_032: 
+  created_at: 2009-09-15 01:01:34
+  code: D4DF78D2
+  updated_at: 2009-09-15 01:01:34
+  id: "32"
+  char_id: "1"
+  game_base_slot_id: "39"
+slots_021: 
+  created_at: 2009-09-15 01:01:34
+  code: 86C0C70F
+  updated_at: 2009-09-15 01:01:34
+  id: "21"
+  char_id: "1"
+  game_base_slot_id: "21"
+slots_010: 
+  created_at: 2009-09-15 01:01:33
+  code: E12A546D
+  updated_at: 2009-09-15 01:01:34
+  id: "10"
+  char_id: "1"
+  game_base_slot_id: "10"
+slots_033: 
+  created_at: 2009-09-15 01:01:34
+  code: 3B6A489D
+  updated_at: 2009-09-15 01:01:34
+  id: "33"
+  char_id: "1"
+  game_base_slot_id: "40"
+slots_022: 
+  created_at: 2009-09-15 01:01:34
+  code: 8F02D984
+  updated_at: 2009-09-15 01:01:34
+  id: "22"
+  char_id: "1"
+  game_base_slot_id: "22"
+slots_011: 
+  created_at: 2009-09-15 01:01:33
+  code: 3FD1876D
+  updated_at: 2009-09-15 01:01:33
+  id: "11"
+  char_id: "1"
+  game_base_slot_id: "11"
+slots_034: 
+  created_at: 2009-09-15 01:01:34
+  code: 3AEF2505
+  updated_at: 2009-09-15 01:01:34
+  id: "34"
+  char_id: "1"
+  game_base_slot_id: "41"
+slots_023: 
+  created_at: 2009-09-15 01:01:34
+  code: ACCFDAD6
+  updated_at: 2009-09-15 01:01:34
+  id: "23"
+  char_id: "1"
+  game_base_slot_id: "23"
+slots_012: 
+  created_at: 2009-09-15 01:01:33
+  code: 930B65B4
+  updated_at: 2009-09-15 01:01:33
+  id: "12"
+  char_id: "1"
+  game_base_slot_id: "12"
+slots_001: 
+  created_at: 2009-09-15 01:01:33
+  code: 49E4E820
+  updated_at: 2009-09-15 01:01:34
+  id: "1"
+  char_id: "1"
+  game_base_slot_id: "1"
+slots_035: 
+  created_at: 2009-09-15 01:01:34
+  code: 1C73BF1D
+  updated_at: 2009-09-15 01:01:34
+  id: "35"
+  char_id: "1"
+  game_base_slot_id: "42"
+slots_024: 
+  created_at: 2009-09-15 01:01:34
+  code: A30CCB3B
+  updated_at: 2009-09-15 01:01:34
+  id: "24"
+  char_id: "1"
+  game_base_slot_id: "24"
+slots_013: 
+  created_at: 2009-09-15 01:01:33
+  code: 051F95B1
+  updated_at: 2009-09-15 01:01:33
+  id: "13"
+  char_id: "1"
+  game_base_slot_id: "13"
+slots_002: 
+  created_at: 2009-09-15 01:01:33
+  code: DEDCD998
+  updated_at: 2009-09-15 01:01:33
+  id: "2"
+  char_id: "1"
+  game_base_slot_id: "2"
