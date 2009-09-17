@@ -10,6 +10,7 @@ class CreateGameBaseSkills < ActiveRecord::Migration
       t.integer :duration
       t.string :mechanic
       t.string :dispel_type
+	  t.string :icon
 
       t.timestamps
     end

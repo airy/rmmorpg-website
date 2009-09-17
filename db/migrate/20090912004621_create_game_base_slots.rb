@@ -5,6 +5,7 @@ class CreateGameBaseSlots < ActiveRecord::Migration
       t.string :slot_type
       t.text :accepts
       t.boolean :birth_right
+	  t.string :icon
 
       t.timestamps
     end
