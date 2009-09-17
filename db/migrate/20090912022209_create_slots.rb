@@ -4,7 +4,6 @@ class CreateSlots < ActiveRecord::Migration
       t.string :code
       t.references :game_base_slot
       t.references :char
-      t.references :contains
 
       t.timestamps
     end
