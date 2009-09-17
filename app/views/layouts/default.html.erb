@@ -6,18 +6,26 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= controller.controller_name %> :: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "widgets/tooltip" %>
+  
 </head>
 <body>
-<%= link_to "home", root_path %> |
-<%= link_to "account", account_path %> |
-<%= link_to "chars", chars_path %> |
-<%= link_to "items", items_path %>
-<br>
-<b>Game Base</b> : <%= link_to "Items", game_base_items_path %> | 
-<%= link_to "Skills", game_base_skills_path %> | 
+<div id='menu' style="background: aqua">
+<%= navigation :main %><br>
+<%= navigation :in_game %><br>
+<%= navigation :game_base %><br>
+</div>
+<div id='rolls' style="background: lime">
+  <b>wuxai 10  :</b><%= wuxai 10 %></br>
+  <b>leveler  :</b> <%= leveler %></br>
+  <b>hit_crit_check :</b><%= hit_crit_check %></br>
+</div>
+
+
 
 <p style="color: green"><%= flash[:notice] %></p>
-
+<h1><%= controller.controller_name %> :: <%= controller.action_name %></h1>
 <%= yield %>
 
 </body>
