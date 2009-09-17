@@ -11,7 +11,7 @@ class CreateGameBaseItems < ActiveRecord::Migration
 	  t.integer :capacity, :deault => 0
 	  t.text :accepts
 	  t.references :visual_model #visual model is the 3D model of object
-	  t.references :icon
+	  t.string :icon
 	  
 	  t.integer :max_stack_size, :default => 1
 	  
