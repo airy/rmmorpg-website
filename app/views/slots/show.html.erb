@@ -10,12 +10,7 @@
 
 <p>
   <b>Contains:</b>
-  <%=h @slot.contains %>
-</p>
-
-<p>
-  <b>Game Base slot:</b>
-  <%=link_to @slot.game_base_slot.slot_type, @slot.game_base_slot %>
+  <%=link_to resource.item.name, resource.item if resource.item %>
 </p>
 
 
