@@ -3,6 +3,10 @@ class GameBaseSlot < ActiveRecord::Base
 
 	before_create :get_code
 	
+	def name
+		slot_type
+	end
+	
 	def self.generate_birth_rights char
 		GameBaseSlot.birth_rights.each do |br|
 			char.slots.create(:game_base_slot => br ).save!
