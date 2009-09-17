@@ -88,10 +88,11 @@ class Char < ActiveRecord::Base
 		create_birth_right_item 'LEGS_SLOT' , 'Jean'
 		create_birth_right_item 'FEET_SLOT' , 'Sprint Shoes'
 		create_birth_right_item 'RANGED_SLOT' , 'Sling'
-		create_birth_right_item 'BAG_SLOT_1' , 'Inventory'
+		create_birth_right_item 'INVENTORY_SLOT' , 'Inventory'
 		create_birth_right_item 'MAINHAND_SLOT' , 'Short Staff'
 		create_birth_right_item 'OFFHAND_SLOT' , 'Pocket Knife'
-		create_birth_right_item 'AMNO_SLOT' , 'Stone Bullets',100
+		create_birth_right_item 'AMNO_SLOT' , 'Stone Bullet',100
+		create_birth_right_item 'KEY_RING_SLOT' , 'Key Ring'
 	end
 	
 	def create_birth_righ_slots
