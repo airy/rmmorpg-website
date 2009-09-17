@@ -2,20 +2,12 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :code %><br />
-    <%= f.text_field :code %>
-  </p>
-  <p>
     <%= f.label :char %><br />
-    <%= f.text_field :char %>
-  </p>
-  <p>
-    <%= f.label :contains %><br />
-    <%= f.text_field :contains %>
+	<%= lookup(f, :char_id, Char ) %>
   </p>
   <p>
     <%= f.label :base_slot %><br />
-    <%= f.text_field :base_slot %>
+	<%= lookup(f, :game_base_slot_id, GameBaseSlot ) %>
   </p>
   <p>
     <%= f.submit 'Save ' %>

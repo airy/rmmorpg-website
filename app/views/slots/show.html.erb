@@ -1,7 +1,27 @@
+</p>
+
+<p>
+  <b>Slot type:</b>
+  <%=h resource.slot_type %>
+</p>
+
+<p>
+  <b>Accepts:</b>
+  <%=h resource.accepts %>
+</p>
+
+<p>
+  <b>Birth right:</b>
+  <%=h resource.birth_right %>
+</p>
+
+<hr>
+
 <p>
   <b>Code:</b>
-  <%=h @slot.code %>
+  <%=h resource.code %>
 </p>
+
 
 <p>
   <b>Char:</b>
@@ -12,7 +32,6 @@
   <b>Contains:</b>
   <%=link_to resource.item.name, resource.item if resource.item %>
 </p>
-
 
 <%= link_to 'Edit', edit_slot_path(@slot) %> |
 <%= link_to 'Back', slots_path %>
