@@ -1,3 +1,4 @@
+
 <p>
   <b>User:</b>
   <%=link_to @char.user.login, @char.user if @char.user %>
@@ -18,6 +19,68 @@
   <%=h @char.gender %>
 </p>
 
+
+
+<p>
+	<table border =1>
+	<tr>
+		<td>
+
+			<table >
+			<tr><td colspan = 2><b>Red Sphere</b></td></tr>
+			<% @char.base_hp_stats.each do |k,v| %>
+				<tr><td><%= "#{k}" %></td><td><%="#{v}" %></td></tr>
+			<% end -%>
+			</table>
+		
+		</td>
+		<td>
+		
+			<table >
+			<tr><td colspan = 2><b>Blue Sphere</b></td></tr>
+			<% @char.base_mp_stats.each do |k,v| %>
+				<tr><td><%= "#{k}" %></td><td><%="#{v}" %></td></tr>
+			<% end -%>
+			</table>
+		
+		</td>
+		<td>
+		
+			<table >
+			<tr><td colspan = 2><b>Yellow Sphere</b></td></tr>
+			<% @char.base_ap_stats.each do |k,v| %>
+				<tr><td><%= "#{k}" %></td><td><%="#{v}" %></td></tr>
+			<% end -%>
+			</table>
+		
+		</td>
+		<td>
+		
+			<table >
+			<tr><td colspan = 2><b>White Sphere</b></td></tr>
+			<% @char.base_other_stats.each do |k,v| %>
+				<tr><td><%= "#{k}" %></td><td><%="#{v}" %></td></tr>
+			<% end -%>
+			</table>
+		
+		</td>
+	</tr>
+	</table>
+	
+</p>
+
+<table border=1>
+<tr><td>STAT</td><td>Base</td><td>Current</td></tr>
+<tr><td>HP</td><td><%=h @char.base_hp %></td><td><%=h @char.current_hp %></td></tr>
+<tr><td>MP</td><td><%=h @char.base_mp %></td><td><%=h @char.current_mp %></td></tr>
+<tr><td>AP</td><td><%=h @char.base_ap %></td><td><%=h @char.current_ap %></td></tr>
+</table>
+
+<p>
+  <b>Money:</b>
+  <%=h @char.money %>
+</p>
+
 <p>
   <b>Status:</b>
   <%=h @char.status %>
@@ -35,36 +98,87 @@
   z:<%=h @char.position_z %>
 </p>
 
-<table>
-<tr><td>STAT</td><td>Base</td><td>Current</td></tr>
-<tr><td>HP</td><td><%=h @char.base_hp %></td><td><%=h @char.current_hp %></td></tr>
-<tr><td>MP</td><td><%=h @char.base_mp %></td><td><%=h @char.current_mp %></td></tr>
-<tr><td>AP</td><td><%=h @char.base_ap %></td><td><%=h @char.current_ap %></td></tr>
-</table>
 
 
+<p>
+	<b><%= show_box_for 'slots', :link_name=> 'Slots' %></b><!-- this is the link to open the detail box-->
+	<% detail_box_for 'slots' do %> <!-- this defines the initially hidden box -->
+		<b><%= hide_box_for 'slots', :link_name => 'Slots' %></b> <!-- this is the link to close the detail box -->
+		
+		<table>
+		<tr>
+			<th>Code</th>
+			<th>Char</th>
+			<th>Code</th>
+			<th>Contains</th>
+		</tr>
+		<%= render @char.slots %>
+		</table>
+	<% end %>
+</p>
 
-<b>SLOTS</b>
-<table>
+<p>
+	<b><%= show_box_for 'items', :link_name=> 'Items' %></b><!-- this is the link to open the detail box-->
+	<% detail_box_for 'items' do %> <!-- this defines the initially hidden box -->
+		<b><%= hide_box_for 'items', :link_name => 'Items' %></b> <!-- this is the link to close the detail box -->
+		
+		<table>
+		<tr>
+			<th>Icon</th>
+			<th>Owner</th>
+			<th>Container</th>
+			<th>Code</th>
+			<th>Name</th>
+		</tr>
+		<%= render @char.items %>
+		</table>
+	<% end %>
+</p>
+
+
+<p>
+	<b><%= show_box_for 'skills', :link_name=> 'skills' %></b><!-- this is the link to open the detail box-->
+	<% detail_box_for 'skills' do %> <!-- this defines the initially hidden box -->
+		<b><%= hide_box_for 'skills', :link_name => 'skills' %></b> <!-- this is the link to close the detail box -->
+		
+		<table>
+		<tr>
+			<th>Name</th>
+			<th>Code</th>
+			<th>School</th>
+			<th>Cost</th>
+			<th>Cooldown</th>
+			<th>Casttime</th>
+			<th>Duration</th>
+			<th>Mechanic</th>
+			<th>Dispel type</th>
+		</tr>
+		<%= render  @char.skills%>
+		</table>
+	<% end %>
+</p>
+
+<p>
+	<b><%= show_box_for 'reputations', :link_name=> 'reputations' %></b><!-- this is the link to open the detail box-->
+	<% detail_box_for 'reputations' do %> <!-- this defines the initially hidden box -->
+		<b><%= hide_box_for 'reputations', :link_name => 'reputations' %></b> <!-- this is the link to close the detail box -->
+
+		<table>
   <tr>
     <th>Code</th>
-    <th>Slot type</th>
-    <th>Contains</th>
+    <th>Char</th>
+    <th>Game base faction</th>
+    <th>Status</th>
+    <th>Points</th>
   </tr>
 
-<% @char.slots.each do |char_slot| %>
-  <tr>
-    <td><%=h char_slot.code %></td>
-    <td><%=h char_slot.slot_type %></td>
-    <td><%=link_to char_slot.contains.name, char_slot.contains  if char_slot.contains %></td>
-    <td><%= link_to 'Show', char_slot %></td>
-    <td><%= link_to 'Edit', edit_char_slot_path(char_slot) %></td>
-    <td><%= link_to 'Destroy', char_slot, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<%= render :partial =>  @char.reputations %>
 </table>
 
+<br />
 
+	<% end %>
+</p>
 
 <%= link_to 'Edit', edit_char_path(@char) %> |
 <%= link_to 'Back', chars_path %>
