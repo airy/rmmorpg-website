@@ -5,8 +5,8 @@ class Slot < ActiveRecord::Base
 	
 	named_scope :by_type, lambda { |t| { :joins => :game_base_slot, :conditions => ["slot_type = ?", t]}}
 
-	def slot_type
-		game_base_slot.slot_type
+	def name
+		"#{slot_type} of #{char.name}"
 	end
 	
 	before_create :get_code
