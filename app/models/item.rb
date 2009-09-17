@@ -23,8 +23,8 @@ class Item < ActiveRecord::Base
 		true
 	end
 	
-	def bind(user)
-		self.bound_to = user
+	def bind_to_char char
+		self.bound_to = char
 		# Write to Action Log
 		self.save
 	end
