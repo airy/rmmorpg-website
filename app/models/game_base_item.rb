@@ -29,7 +29,7 @@ class GameBaseItem < ActiveRecord::Base
 	end
 	
 	def is_stackable?
-		max_stack_size > 0
+		max_stack_size > 1
 	end
 
 	def generate_item container, quantity=1
