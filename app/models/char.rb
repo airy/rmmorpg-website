@@ -1,21 +1,20 @@
 class Char < ActiveRecord::Base
   belongs_to :user
   #belongs_to :parent, :class_name =>  'Char'
+	
 
-  before_create :get_code
-  after_create :create_birth_rights
-  
-  validates_uniqueness_of :name
-  
-  
-  
-
+	def skills
+		GameBaseSkill.all(:conditions => {:id => items.map{ |x| x.game_base_skill }}).uniq
 	end
 	
 	def create_birth_right_item slot_type, item_name, quantity=1
 		s = self.slots.by_type( slot_type ).first 
 		GameBaseItem.find_by_name(item_name).generate_item(s, quantity)
 	end
+	
+	#dummy code to remove
+	
+	after_create :create_birth_rights
 	
 	def create_birth_right_items
 		create_birth_right_item 'HEAD_SLOT' , 'Bandana'
@@ -33,11 +32,11 @@ class Char < ActiveRecord::Base
 	def create_birth_righ_slots
 		GameBaseSlot.generate_birth_rights self
 	end
+
 	def create_birth_rights
 		create_birth_righ_slots
 		create_birth_right_items
 	end
-	
 	
 	# RED SPHERE - HP
 	def base_hp
@@ -77,6 +76,5 @@ private
 	def get_code
 		self.code = generate_code
 	end   
-	
 	
 end
