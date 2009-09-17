@@ -5,6 +5,20 @@ class Item < ActiveRecord::Base
 	#belongs_to :visual_model, :class_name => 'GameBaseItem'
 	belongs_to :bound_to, :class_name => 'Char'
 	
+	delegate :name, 
+		:slot_type, 
+		:item_type, 
+		:item_sub_type, 
+		:binding_type, 
+		:capacity, 
+		:game_base_skill, 
+		:accepts, 
+		:max_stack_size, 
+		:range, 
+		:damage_bonus, 
+		:icon,
+	:to => :game_base_item
+	
 	def binding_checks?
 		true
 	end
@@ -15,9 +29,6 @@ class Item < ActiveRecord::Base
 		self.save
 	end
 	
-	def name
-		game_base_item.name
-	end
 	
 	
 	before_create :get_code
