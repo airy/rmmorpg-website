@@ -25,4 +25,49 @@ module ApplicationHelper
 	def leveler
 		3.d10 == 30
 	end
+	
+
+	def action_panel
+	
+		if controller.controller_name != 'users' && ( resource or resources )
+			ap = []
+			case  controller.action_name 
+				when "index" 
+					ap << new_link
+				when "show"
+					ap << new_link
+					ap << list_link
+					ap << edit_link
+					ap << delete_link
+				when "edit"
+					ap << new_link
+					#ap << list _link
+					ap << show_link
+				when "new"
+					ap << list_link
+			end
+		end
+	end
+
+
+	def edit_link
+	  link_to "Edit", edit_resource_path  
+	end
+
+	def show_link
+	  link_to "Show", resource_path  
+	end
+
+	def new_link
+	  link_to "New", new_resource_path
+	end
+
+	def delete_link
+    link_to 'Destroy', resource, :confirm => 'Are you sure?', :method => :delete 
+	end
+
+	def list_link
+	  link_to "List", resources_path  
+	end
+	
 end
