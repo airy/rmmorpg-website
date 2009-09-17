@@ -1,13 +1,8 @@
 class GameBaseFaction < ActiveRecord::Base
+	#automatic code generation
+	include Coded
 
 	validates_uniqueness_of :name
 	
-	before_create :get_code
-	
-	
-private
-	def get_code
-		self.code = generate_code
-	end   
 	
 end

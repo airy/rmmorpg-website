@@ -1,4 +1,7 @@
 class Char < ActiveRecord::Base
+	#automatic code generation
+	include Coded
+
   belongs_to :user
   #belongs_to :parent, :class_name =>  'Char'
   belongs_to :visual_model, :class_name =>  'GameBaseItem'

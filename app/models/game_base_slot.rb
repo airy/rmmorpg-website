@@ -1,7 +1,9 @@
 class GameBaseSlot < ActiveRecord::Base
+	#automatic code generation
+	include Coded
+
 	named_scope :birth_rights, :conditions => {:birth_right => true}
 
-	before_create :get_code
 	
 	def name
 		slot_type
@@ -12,10 +14,5 @@ class GameBaseSlot < ActiveRecord::Base
 			char.slots.create(:game_base_slot => br ).save!
 		end
 	end
- 
-private
-	def get_code
-		self.code = generate_code
-	end   
 end
 	

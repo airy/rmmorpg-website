@@ -1,4 +1,8 @@
 class Slot < ActiveRecord::Base
+	#automatic code generation
+	include Coded
+
+
 	belongs_to :char
 	belongs_to :game_base_slot
 	has_one :item, :as => :container, :dependent => :destroy
@@ -34,10 +38,4 @@ class Slot < ActiveRecord::Base
 		"#{slot_type} of #{char.name}"
 	end
 	
-	before_create :get_code
-	
-private
-	def get_code
-		self.code = generate_code
-	end   
 end

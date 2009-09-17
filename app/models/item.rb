@@ -1,4 +1,7 @@
 class Item < ActiveRecord::Base
+	#automatic code generation
+	include Coded
+
 	belongs_to :container, :polymorphic => true
 	belongs_to :game_base_item
 	belongs_to :created_by #class_name => 'AbilityLog'
@@ -28,14 +31,4 @@ class Item < ActiveRecord::Base
 		# Write to Action Log
 		self.save
 	end
-	
-	
-	
-	before_create :get_code
-
-private
-	def get_code
-		self.code = generate_code
-	end   
-
 end

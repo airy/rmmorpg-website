@@ -1,4 +1,7 @@
 class GameBaseItem < ActiveRecord::Base
+	#automatic code generation
+	include Coded
+
 	has_many :items
 	has_many :visually_modeled_items, :as => :visual_model, :class_name => 'Item'
 	
@@ -46,11 +49,5 @@ class GameBaseItem < ActiveRecord::Base
 		i.stack_size = quantity
 		i.save
 	end
-  before_create :get_code
-
-private
-	def get_code
-		self.code = generate_code
-	end   
 end
 	
