@@ -1,0 +1,15 @@
+  <tr>
+    <td><%= iconify game_base_skill.icon %></td>
+    <td><%= link_to game_base_skill.name, game_base_skill %></td>
+    <td><%=h game_base_skill.code %></td>
+    <td><%=h game_base_skill.school %></td>
+    <td><%=h game_base_skill.cost %></td>
+    <td><%=h game_base_skill.cooldown %></td>
+    <td><%=h game_base_skill.casttime %></td>
+    <td><%=h game_base_skill.duration %></td>
+    <td><%=h game_base_skill.mechanic %></td>
+    <td><%=h game_base_skill.dispel_type %></td>
+    <td><%= link_to 'Show', game_base_skill %></td>
+    <td><%= link_to 'Edit', edit_game_base_skill_path(game_base_skill) %></td>
+    <td><%= link_to 'Destroy', game_base_skill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
