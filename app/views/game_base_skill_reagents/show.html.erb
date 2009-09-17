@@ -1,0 +1,22 @@
+<p>
+  <b>Code:</b>
+  <%=h @game_base_skill_reagent.code %>
+</p>
+
+<p>
+  <b>Game base skill:</b>
+  <%=link_to  @game_base_skill_reagent.game_base_skill.name,  @game_base_skill_reagent.game_base_skill %>
+</p>
+
+<p>
+  <b>Game base item:</b>
+  <%=link_to @game_base_skill_reagent.game_base_item.name, @game_base_skill_reagent.game_base_item %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @game_base_skill_reagent.quantity %>
+</p>
+
+<%= link_to 'Edit', edit_game_base_skill_reagent_path(@game_base_skill_reagent) %> |
+<%= link_to 'Back', game_base_skill_reagents_path %>

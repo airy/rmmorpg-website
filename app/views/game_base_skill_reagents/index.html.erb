@@ -1,0 +1,26 @@
+<h1>Listing game_base_skill_reagents</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Game base skill</th>
+    <th>Game base item</th>
+    <th>Quantity</th>
+  </tr>
+
+<% @game_base_skill_reagents.each do |game_base_skill_reagent| %>
+  <tr>
+    <td><%=h game_base_skill_reagent.code %></td>
+    <td><%=h game_base_skill_reagent.game_base_skill.name %></td>
+    <td><%=h game_base_skill_reagent.game_base_item.name %></td>
+    <td><%=h game_base_skill_reagent.quantity %></td>
+    <td><%= link_to 'Show', game_base_skill_reagent %></td>
+    <td><%= link_to 'Edit', edit_game_base_skill_reagent_path(game_base_skill_reagent) %></td>
+    <td><%= link_to 'Destroy', game_base_skill_reagent, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game_base_skill_reagent', new_game_base_skill_reagent_path %>

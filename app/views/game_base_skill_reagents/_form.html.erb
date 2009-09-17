@@ -1,0 +1,19 @@
+<% form_for_resource do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :game_base_skill %><br />
+	<%= lookup(f, :game_base_skill_id, GameBaseSkill ) %>
+  </p>
+  <p>
+    <%= f.label :game_base_item %><br />
+	<%= lookup(f, :game_base_item_id, GameBaseItem ) %>
+  </p>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

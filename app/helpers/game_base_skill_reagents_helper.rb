@@ -1,0 +1,2 @@
+module GameBaseSkillReagentsHelper
+end
