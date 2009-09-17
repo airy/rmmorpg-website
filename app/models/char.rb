@@ -1,11 +1,20 @@
 class Char < ActiveRecord::Base
   belongs_to :user
   #belongs_to :parent, :class_name =>  'Char'
-	
-
+  belongs_to :visual_model, :class_name =>  'GameBaseItem'
+  has_many :slots
+  has_many :reputations
+  
+  #has_many :items , :through => :slots
+  
+	def items
+		Item.all(:conditions => {:container_id => slot_ids})
+	end
+  
 	def skills
 		GameBaseSkill.all(:conditions => {:id => items.map{ |x| x.game_base_skill }}).uniq
 	end
+	
 	
 	def create_birth_right_item slot_type, item_name, quantity=1
 		s = self.slots.by_type( slot_type ).first 
@@ -17,16 +26,16 @@ class Char < ActiveRecord::Base
 	after_create :create_birth_rights
 	
 	def create_birth_right_items
-		create_birth_right_item 'HEAD_SLOT' , 'Bandana'
-		create_birth_right_item 'CHEST_SLOT' , 'Shirt'
-		create_birth_right_item 'LEGS_SLOT' , 'Jean'
-		create_birth_right_item 'FEET_SLOT' , 'Sprint Shoes'
-		create_birth_right_item 'RANGED_SLOT' , 'Sling'
-		create_birth_right_item 'INVENTORY_SLOT' , 'Inventory'
-		create_birth_right_item 'MAINHAND_SLOT' , 'Short Staff'
-		create_birth_right_item 'OFFHAND_SLOT' , 'Pocket Knife'
-		create_birth_right_item 'AMNO_SLOT' , 'Stone Bullet',100
-		create_birth_right_item 'KEY_RING_SLOT' , 'Key Ring'
+		#create_birth_right_item 'HEAD_SLOT' , 'Bandana'
+		#create_birth_right_item 'CHEST_SLOT' , 'Shirt'
+		#create_birth_right_item 'LEGS_SLOT' , 'Jean'
+		#create_birth_right_item 'FEET_SLOT' , 'Sprint Shoes'
+		#create_birth_right_item 'RANGED_SLOT' , 'Sling'
+		#create_birth_right_item 'INVENTORY_SLOT' , 'Inventory'
+		#create_birth_right_item 'MAINHAND_SLOT' , 'Short Staff'
+		#create_birth_right_item 'OFFHAND_SLOT' , 'Pocket Knife'
+		#create_birth_right_item 'AMNO_SLOT' , 'Stone Bullets',100
+		#create_birth_right_item 'KEY_RING_SLOT' , 'Key Ring'
 	end
 	
 	def create_birth_righ_slots

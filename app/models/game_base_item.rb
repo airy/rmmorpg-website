@@ -1,5 +1,7 @@
 class GameBaseItem < ActiveRecord::Base
 	has_many :items
+	has_many :visually_modeled_items, :as => :visual_model, :class_name => 'Item'
+	
 	#has_many :game_base_skill_reagents
 	
 	belongs_to :game_base_skill
@@ -43,8 +45,6 @@ class GameBaseItem < ActiveRecord::Base
 		i.visual_model = i.game_base_item
 		i.stack_size = quantity
 		i.save
-		container.contains = i
-		container.save
 	end
   before_create :get_code
 
