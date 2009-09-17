@@ -5,3 +5,8 @@ log/*.log
 tmp/**/*
 db/*.sqlite3
 vendor/*
+public/images/game-icons
+public/images/widgets
+public/javascripts/widgets
+public/stylesheets/widget
+
