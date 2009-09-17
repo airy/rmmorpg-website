@@ -107,12 +107,6 @@ class Char < ActiveRecord::Base
 		create_birth_right_items
 	end
 	
-	def destroy_birth_rights
-		self.char_slots.each do |slot|
-			slot.contains.destroy
-			slot.destroy
-		end
-	end
 	
 	def base_hp
 		100
