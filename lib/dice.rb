@@ -128,7 +128,7 @@ class Integer
   # intend to do 2.d9 (it being a rare die, and not used by any RPG games
   # I'm aware of). Also, the optimist in me likes to think this is more
   # efficient than method_missing, though I haven't done any benchmarks. :)
-  [4,6,8,10,12,20].each do |sides|
+  [4,6,8,10,12,20,100].each do |sides|
     define_method("d#{sides}") { Dice.new(self, sides) }
   end
 end
