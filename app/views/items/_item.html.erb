@@ -1,8 +1,8 @@
 <tr>
-     <td><%= iconify item.icon %></td>
+    <td><%=link_to item.code, item %></td>
+	<td><%= iconify item.icon %></td>
    <td><%=link_to item.container.char.name, item.container.char %></td>
     <td><%=link_to item.container.name, item.container %></td>
     <td><%=h item.item_level %></td>
-    <td><%=link_to item.code, item %></td>
     <td><%=link_to item.name, item  %></td>
 </tr>

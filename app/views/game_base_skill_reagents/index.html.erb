@@ -10,7 +10,7 @@
 
 <% @game_base_skill_reagents.each do |game_base_skill_reagent| %>
   <tr>
-    <td><%=h game_base_skill_reagent.code %></td>
+    <td><%=link_to game_base_skill_reagent.code, game_base_skill_reagent %></td>
     <td><%=h game_base_skill_reagent.game_base_skill.name %></td>
     <td><%=h game_base_skill_reagent.game_base_item.name %></td>
     <td><%=h game_base_skill_reagent.quantity %></td>
@@ -20,7 +20,3 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New game_base_skill_reagent', new_game_base_skill_reagent_path %>

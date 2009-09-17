@@ -1,5 +1,5 @@
   <tr>
-    <td><%= reputation.code %></td>
+    <td><%=link_to reputation.code, reputation %></td>
     <td><%= link_to reputation.char.name, reputation.char %></td>
     <td><%=link_to reputation.game_base_faction.name, reputation.game_base_faction %></td>
     <td><%=h reputation.status %></td>

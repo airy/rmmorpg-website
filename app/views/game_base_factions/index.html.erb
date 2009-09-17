@@ -8,15 +8,8 @@
 
 <% @game_base_factions.each do |game_base_faction| %>
   <tr>
-    <td><%=h game_base_faction.code %></td>
+    <td><%=link_to game_base_faction.code, game_base_faction %></td>
     <td><%=h game_base_faction.name %></td>
-    <td><%= link_to 'Show', game_base_faction %></td>
-    <td><%= link_to 'Edit', edit_game_base_faction_path(game_base_faction) %></td>
-    <td><%= link_to 'Destroy', game_base_faction, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New game_base_faction', new_game_base_faction_path %>

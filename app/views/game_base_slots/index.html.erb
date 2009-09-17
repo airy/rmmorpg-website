@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Icon</th>
     <th>Code</th>
+    <th>Icon</th>
     <th>Slot type</th>
     <th>Accepts</th>
     <th>Birth right</th>
@@ -11,18 +11,11 @@
 
 <% @game_base_slots.each do |game_base_slot| %>
   <tr>
+    <td><%=link_to  game_base_slot.code, game_base_slot %></td>
     <td><%=iconify game_base_slot.icon %></td>
-    <td><%=h game_base_slot.code %></td>
     <td><%=h game_base_slot.slot_type %></td>
     <td><%=h game_base_slot.accepts %></td>
     <td><%=h game_base_slot.birth_right %></td>
-    <td><%= link_to 'Show', game_base_slot %></td>
-    <td><%= link_to 'Edit', edit_game_base_slot_path(game_base_slot) %></td>
-    <td><%= link_to 'Destroy', game_base_slot, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New game_base_slot', new_game_base_slot_path %>
