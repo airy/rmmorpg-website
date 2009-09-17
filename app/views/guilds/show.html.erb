@@ -1,0 +1,18 @@
+<p>
+  <b>Code:</b>
+  <%=h @guild.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @guild.name %>
+</p>
+
+<p>
+  <b>Zone:</b>
+  <%=h @guild.zone %>
+</p>
+
+
+<%= link_to 'Edit', edit_guild_path(@guild) %> |
+<%= link_to 'Back', guilds_path %>
