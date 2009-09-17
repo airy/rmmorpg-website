@@ -7,72 +7,7 @@ class Char < ActiveRecord::Base
   
   validates_uniqueness_of :name
   
-  def birth_right_slots
-	[
-		'HEAD_SLOT',
-		'NECK_SLOT',
-		'SHOULDERS_SLOT',
-		'BACK_SLOT',
-		'CHEST_SLOT',
-		'WIRST_SLOT',
-		'HANDS_SLOT',
-		'WAIST_SLOT',
-		'LEGS_SLOT',
-		'FEET_SLOT',
-		'RING_SLOT_1',
-		'RING_SLOT_2',
-		'TRINKET_SLOT_1',
-		'TRINKET_SLOT_2',
-		'MAINHAND_SLOT',
-		'OFFHAND_SLOT',
-		'RANGED_SLOT',
-		'AMNO_SLOT',
-		'BAG_SLOT_1',
-		'BAG_SLOT_2',
-		'BAG_SLOT_3',
-		'BAG_SLOT_4',
-		'BAG_SLOT_5',
-		'KEY_RING',
-		'ABILITY_SLOT_1',
-		'ABILITY_SLOT_2',
-		'ABILITY_SLOT_3',
-		'ABILITY_SLOT_4',
-		'ABILITY_SLOT_5',
-		'ABILITY_SLOT_6',
-		'ABILITY_SLOT_7',
-		'ABILITY_SLOT_8',
-		'PROFFIENCY_SLOT_1',
-		'PROFFIENCY_SLOT_2'
-	]
-  end
   
-  def birth_right_items
-	[
-		'HEAD_SLOT',
-		'NECK_SLOT',
-		'SHOULDERS_SLOT',
-		'BACK_SLOT',
-		'CHEST_SLOT',
-		'WIRST_SLOT',
-		'HANDS_SLOT',
-		'WAIST_SLOT',
-		'PANTS_SLOT',
-		'FEET_SLOT',
-		'RING_SLOT_1',
-		'RING_SLOT_2',
-		'TRINKET_SLOT_1',
-		'TRINKET_SLOT_2',
-		'MAINHAND_SLOT',
-		'OFFHAND_SLOT',
-		'RANGED_SLOT',
-		'BAG_SLOT_1',
-		'BAG_SLOT_2',
-		'BAG_SLOT_3',
-		'BAG_SLOT_4',
-		'BAG_SLOT_5',
-		'KEY_RING'
-	]
-  end
   
 
 	end
