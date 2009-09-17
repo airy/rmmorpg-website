@@ -108,17 +108,39 @@ class Char < ActiveRecord::Base
 	end
 	
 	
+	# RED SPHERE - HP
 	def base_hp
 		100
 	end
 	
+	def base_hp_stats
+		{:sta => 25, :con => 25, :muscle => 25 }
+	end
+	
+	#BLUE SPHERE - MP
 	def base_mp
 		100
 	end
 	
+	def base_mp_stats
+		{:int => 25, :wis => 25, :will => 25 }
+	end
+	
+	#YELLOW SPHERE - AP
 	def base_ap
 		100
 	end
+
+	def base_ap_stats
+		{:energy => 25, :dex => 25, :str => 25 }
+	end
+	
+	def base_other_stats
+		{:luck => 25, :regen => 25, :charisma => 25 }
+	end
+	
+	#EOF dummy code
+	before_create :get_code
 	
 private
 	def get_code
