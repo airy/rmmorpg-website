@@ -4,9 +4,9 @@ class Char < ActiveRecord::Base
 
   belongs_to :user
   #belongs_to :parent, :class_name =>  'Char'
-  belongs_to :visual_model, :class_name =>  'GameBaseItem'
-  has_many :slots
-  has_many :reputations
+  #belongs_to :visual_model, :class_name =>  'GameBaseItem'
+  has_many :slots, :dependent => :destroy
+  has_many :reputations, :dependent => :destroy
   
   #has_many :items , :through => :slots
   
