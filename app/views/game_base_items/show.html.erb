@@ -9,40 +9,75 @@
 </p>
 
 <p>
-  <b>Item Type:</b>
-  <%=h @game_base_item.item_type %>
+  <b>Slot Type:</b>
+  <%=h resource.slot_type %>
 </p>
 
 <p>
-  <b>BInding:</b>
-  <%=h @game_base_item.binding %>
+  <b>Item Type:</b>
+  <%=h resource.item_sub_type %>
+</p>
+
+<p>
+  <b>Binding Type:</b>
+  <%=h resource.binding_type %>
 </p>
 
 <p>
   <b>Capacity:</b>
-  <%=h @game_base_item.capacity %>
+  <%=h resource.capacity %>
 </p>
 
 <p>
+  <b>Game Base Skill (if item is skill stone):</b>
+  <%=link_to resource.game_base_skill.name, resource.game_base_skill if resource.game_base_skill%>
+</p>
+
+
+<p>
   <b>Accepts:</b>
-  <%=h @game_base_item.accepts %>
+  <%=h resource.accepts %>
 </p>
 
 <p>
   <b>Max Stack Size:</b>
-  <%=h @game_base_item.max_stack_size %>
+  <%=h resource.max_stack_size %>
 </p>
 
 <p>
   <b>Range:</b>
-  <%=h @game_base_item.range %>
+  <%=h resource.range %>
 </p>
 
 <p>
-  <b>Damage Dice:</b>
-  <%=h @game_base_item.damage_dice %>
+  <b>Damage Bonus:</b>
+  <%=h resource.damage_bonus %>
 </p>
 
+<p>
+  <b>Icon:</b>
+  <%= iconify resource.icon %>
+</p>
 
-<%= link_to 'Edit', edit_game_base_item_path(@game_base_item) %> |
+<p>
+  <b><%= show_box_for 'ingame_items', :link_name=> 'Ingame Items' %></b><!-- this is the link to open the detail box-->
+    
+  <% detail_box_for 'ingame_items' do %> <!-- this defines the initially hidden box -->
+    <b><%= hide_box_for 'ingame_items', :link_name => 'Ingame Items' %></b> <!-- this is the link to close the detail box -->
+
+<table>
+  <tr>
+    <th>Owner</th>
+    <th>Base item</th>
+    <th>Code</th>
+    <th>Created by</th>
+    <th>Stack Size</th>
+  </tr>	
+	<%= render :partial => resource.items %>
+</table>
+  <% end %>
+ 
+</p>
+
+<%= link_to 'Edit', edit_game_base_item_path(resource) %> |
 <%= link_to 'Back', game_base_items_path %>

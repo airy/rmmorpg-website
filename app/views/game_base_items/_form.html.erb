@@ -6,8 +6,18 @@
     <%= f.text_field :name %>
   </p>
   <p>
+    <%= f.label :slot_type %><br />
+	<%= f.select( :slot_type, resource.slot_types) %>
+  </p>
+  <p>
     <%= f.label :item_type %><br />
-	<%= f.select( :item_type, resource.item_types) %>
+	<%= f.text_field :item_type %>
+	<%#= f.select( :item_type, resource.item_types) %>
+  </p>
+  <p>
+    <%= f.label :item_sub_type %><br />
+	<%= f.text_field :item_sub_type %>
+	<%#= f.select( :item_sub_type, resource.item_sub_types) %>
   </p>
   <p>
     <%= f.label :capacity %><br />
@@ -20,6 +30,15 @@
   <p>
     <%= f.label :visual_model %><br />
     link_to_item visual_model
+  </p>
+  <p>
+    <%= f.label :icon %><br />
+    <%= f.text_field :icon %>
+  </p>
+  
+  <p>
+    <%= f.label :game_base_skill %><br />
+    <%= lookup(f, :game_base_skill_id, GameBaseSkill, true ) %>
   </p>
   <p>
     <%= f.label :created_by %><br />

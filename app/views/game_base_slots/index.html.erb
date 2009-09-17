@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Icon</th>
     <th>Code</th>
     <th>Slot type</th>
     <th>Accepts</th>
@@ -10,6 +11,7 @@
 
 <% @game_base_slots.each do |game_base_slot| %>
   <tr>
+    <td><%=iconify game_base_slot.icon %></td>
     <td><%=h game_base_slot.code %></td>
     <td><%=h game_base_slot.slot_type %></td>
     <td><%=h game_base_slot.accepts %></td>

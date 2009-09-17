@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Icon</th>
     <th>Name</th>
     <th>Code</th>
     <th>Item Type</th>
@@ -12,6 +13,7 @@
 
 <% @game_base_items.each do |game_base_item| %>
   <tr>
+    <td><%= iconify game_base_item.icon %></td>
     <td><%= link_to game_base_item.name, game_base_item %></td>
     <td><%=h game_base_item.code %></td>
     <td><%=h game_base_item.item_type %></td>
