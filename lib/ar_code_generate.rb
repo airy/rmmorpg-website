@@ -4,4 +4,5 @@ class ActiveRecord::Base
   def generate_code(chunks=2)
     ("%04x"*chunks % ([nil]*chunks).map { rand(2**16) }).upcase
   end
+  
 end
