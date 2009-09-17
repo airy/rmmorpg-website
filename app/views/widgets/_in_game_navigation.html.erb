@@ -1,0 +1,46 @@
+<%  
+# this partial renders a navigation bar, you can call it in your views with:
+#   <% navigation :in_game % > 
+#
+# you can pass render_navigation a few options:
+#   :generate_css => true|false #=> generates a default inline css for the tabnav, defaults to false
+#   :html => aHash #=> sets html options for the tabnav's div (es :html => {:class=> 'myCssClass', :id=>'myCssId'}) 
+#  
+render_navigation :in_game, :generate_css => true do 
+    add_item do |i|
+      i.named 'in game'
+      i.disable!
+    end
+	
+	
+	
+    add_item do |i|
+      i.named 'chars' 
+      i.links_to chars_path
+    end
+	
+    add_item do |i|
+      i.named 'guilds' 
+      i.links_to guilds_path
+    end
+
+    add_item do |i|
+      i.named 'slots' 
+      i.links_to slots_path
+    end
+    
+    add_item do |i|
+      i.named 'items' 
+      i.links_to items_path
+    end
+    
+    # you can pass add_item a block to just like the tabnav!
+    #  
+    # add_item do |i|
+    #   i.html = {:id => 'logout_link'}
+    #   i.named 'logout', 
+    #   i.links_to :action => 'logout'
+    # end
+    #
+end 
+%>

@@ -1,0 +1,18 @@
+<p>
+  <b>Code:</b>
+  <%=h @instance.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @instance.name %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%=h @instance.owner %>
+</p>
+
+
+<%= link_to 'Edit', edit_instance_path(@instance) %> |
+<%= link_to 'Back', instances_path %>
