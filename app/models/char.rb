@@ -75,12 +75,6 @@ class Char < ActiveRecord::Base
   end
   
 
-	def create_birth_right_slots
-		birth_right_slots.each do |br|
-			slot = self.slots.new
-			slot.slot_type = br
-			slot.save
-		end
 	end
 	
 	def create_birth_right_item slot_type, item_name, quantity=1
@@ -100,6 +94,9 @@ class Char < ActiveRecord::Base
 		create_birth_right_item 'AMNO_SLOT' , 'Stone Bullets',100
 	end
 	
+	def create_birth_righ_slots
+		GameBaseSlot.generate_birth_rights self
+	end
 	def create_birth_rights
 		create_birth_right_slots
 		create_birth_right_items
