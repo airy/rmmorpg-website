@@ -1,12 +1,30 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :game_base_skills
-  map.resources :items
-  map.resources :char_slots
+
+  map.resources :instances
+
+  map.resources :game_base_slots
   map.resources :game_base_items
+  map.resources :game_base_skills
+  map.resources :game_base_skill_reagents
+  map.resources :game_base_birth_rights
+  map.resources :game_base_factions
+
+  map.resources :guilds
+
+
+  map.resources :slots
+  map.resources :items
+
+
   map.resources :chars do |char|
+    char.resources :reputations
+
        char.resources :char_slots do |slot|
+		#slot.resource :contains
 	   end
+       #char.resources :sales, :collection => { :recent => :get }
   end
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   map.resource :user_session
