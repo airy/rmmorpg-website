@@ -83,11 +83,9 @@ class Char < ActiveRecord::Base
 		end
 	end
 	
-	def create_birth_right_item slot, base_item, quantity=1
-		slot = self.slots.find_by_slot_type( slot)
-		gbi = GameBaseItem.find_by_name(base_item)
-		
-		gbi.generate_item(slot,quantity) if gbi
+	def create_birth_right_item slot_type, item_name, quantity=1
+		s = self.slots.by_type( slot_type ).first 
+		GameBaseItem.find_by_name(item_name).generate_item(s, quantity)
 	end
 	
 	def create_birth_right_items
