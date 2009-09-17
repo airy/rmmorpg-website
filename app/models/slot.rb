@@ -4,6 +4,13 @@ class Slot < ActiveRecord::Base
 	has_one :item, :as => :container, :dependent => :destroy
 	
 	named_scope :by_type, lambda { |t| { :joins => :game_base_slot, :conditions => ["slot_type = ?", t]}}
+	def current_icon
+		if item && item.icon
+			item.icon 		
+		else
+			icon 
+		end
+	end
 
 	def name
 		"#{slot_type} of #{char.name}"
