@@ -5,12 +5,12 @@
 
 <p>
   <b>Char:</b>
-  <%=h @reputation.char %>
+  <%=h @reputation.char.name %>
 </p>
 
 <p>
   <b>Game base faction:</b>
-  <%=h @reputation.game_base_faction %>
+  <%=h @reputation.game_base_faction.name %>
 </p>
 
 <p>
@@ -24,5 +24,7 @@
 </p>
 
 
-<%= link_to 'Edit', edit_reputation_path(@reputation) %> |
-<%= link_to 'Back', reputations_path %>
+<%= link_to 'Edit', edit_resource_path %> |
+<%= link_to 'Destroy', resource, :confirm => 'Are you sure?', :method => :delete %> | 
+<%= link_to 'Back', resources_path %>
+

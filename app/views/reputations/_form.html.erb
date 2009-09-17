@@ -3,11 +3,11 @@
 
   <p>
     <%= f.label :char %><br />
-    <%= f.text_field :char %>
+	<%= resource.char.name %>
   </p>
   <p>
     <%= f.label :game_base_faction %><br />
-    <%= f.text_field :game_base_faction %>
+	<%= lookup(f, :game_base_faction_id, GameBaseFaction ) %>
   </p>
   <p>
     <%= f.label :status %><br />
