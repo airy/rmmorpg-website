@@ -99,7 +99,7 @@ class Char < ActiveRecord::Base
 		GameBaseSlot.generate_birth_rights self
 	end
 	def create_birth_rights
-		create_birth_right_slots
+		create_birth_righ_slots
 		create_birth_right_items
 	end
 	
