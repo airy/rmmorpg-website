@@ -4,7 +4,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :game_base_slots
   map.resources :game_base_items
-  map.resources :game_base_skills
+  map.resources :game_base_skills do |skill|
+		skill.resources :game_base_skill_reagents
+	end
   map.resources :game_base_skill_reagents
   map.resources :game_base_birth_rights
   map.resources :game_base_factions
@@ -24,7 +26,7 @@ ActionController::Routing::Routes.draw do |map|
 	   end
        #char.resources :sales, :collection => { :recent => :get }
   end
-
+	map.resources :reputations
   # The priority is based upon order of creation: first created -> highest priority.
 
   map.resource :user_session
